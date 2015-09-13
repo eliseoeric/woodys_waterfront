@@ -51,7 +51,7 @@
 
 	<!-- start #masthead -->
 	<header id="masthead" class="site-header row navbar" role="banner">
-		<div class="site-branding one columns logo">
+		<div class="site-branding two columns logo">
 			<h1 class="site-title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img src="<?php echo get_template_directory_uri() . '/img/red-no-stroke.png'; ?>" alt="Woody's Waterfront"/>
@@ -63,7 +63,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav>
 
-		<div id="quick-contact" class="three columns">
+		<div id="quick-contact" class="two columns">
 			<ul>
 				<li><strong><i class="icon-phone"></i>727-360-9164</strong></li>
 				<li><i class="icon-facebook-squared"></i></li>

@@ -2,12 +2,13 @@
 // Happy Tinkering!
 
 //Brand Colors 
-$brand-dark-blue: #0D3B66;
-$breand-neutral: #FAF0CA;
-$breand-green: #40FD65;
-$brand-blue: #00A6FB;
-$brand-orange: #F95738;
-$neutral-white: #fff;
+$brand-dark-blue: #0F385D;
+$brand-neutral: #FBEFC5;
+$brand-green: #4AFD5C;
+$brand-blue: #00A1FB;
+$brand-orange: #FA5333;
+
+
 
 
 // Grid Settings
@@ -27,6 +28,7 @@ $nav-distance: 0; 							// Navigation distance from the top of the viewport
 
 // Typography
 $font-family: "Open Sans";
+$header-font-family: "Montserrat";
 $font-style-italic: italic;
 $icons: entypo;
 $font-smoothing: antialiased;
@@ -82,11 +84,11 @@ $body-link-hover-color: #c03d20 !default;
 // User Interface Colors
 $global-bg-color: #fff;
 $navbar-color: #fff;
-$navbar-link-color: #0D3B66;
+$navbar-link-color: $body-font-color;
 
 $primary-color: $brand-blue;
 $secondary-color: $brand-orange;
-$default-color: lighten($breand-neutral, 10);
+$default-color: lighten($brand-neutral, 10);
 $info-color: #00A6FB;
 $danger-color: #ca3838;
 $warning-color: #f6b83f;
@@ -106,6 +108,7 @@ $black: #000;
 $white: #fff;
 
 // Borders
+$img-radius: 10px;
 $button-radius: 4px !default;
 $metro-radius: 0 !default;
 $bigger-radius: 8px;

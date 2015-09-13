@@ -21,6 +21,7 @@ class Script_Handler {
 	}
 
 	public function enqueue_scripts() {
+
 		wp_enqueue_style( 'waterfront-style' );
 
 		wp_enqueue_script( 'modernizr' );

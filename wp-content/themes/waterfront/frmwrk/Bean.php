@@ -33,9 +33,9 @@ class Bean {
 		define( 'BEAN_FRAMEWORK_DIR', get_template_directory() . '/frmwrk/' );
 
 		$this->get_included_files();
-//		$this->register_post_types();
-//		$this->register_metaboxes();
-//		$this->register_shortcodes();
+		$this->register_post_types();
+		$this->register_metaboxes();
+		$this->register_shortcodes();
 		$this->script_handler();
 		//
 		add_action( 'after_setup_theme', array( $this, 'liftoff' ) );
@@ -46,6 +46,9 @@ class Bean {
 		require BEAN_FRAMEWORK_DIR . '/inc/utilities.php';
 		require BEAN_FRAMEWORK_DIR . '/inc/Liftoff.php';
 		require BEAN_FRAMEWORK_DIR . '/inc/Script_Handler.php';
+		require BEAN_FRAMEWORK_DIR . '/inc/Post_Type_Manager.php';
+		require BEAN_FRAMEWORK_DIR . '/inc/Metabox_Handler.php';
+		require BEAN_FRAMEWORK_DIR . '/inc/Shortcode_Manager.php';
 
 		/**
 		 * Implement the Custom Header feature.
@@ -81,5 +84,34 @@ class Bean {
 	public function script_handler() {
 		$sh = new Script_Handler();
 		$sh->init();
+	}
+
+	public function register_post_types() {
+		$post_manager = new Post_Type_Manager();
+
+		$post_manager->register_posts(
+			array(
+				'menu_pt'
+			)
+		);
+	}
+
+	public function register_metaboxes() {
+		$metabox_handler = new Metabox_Handler();
+
+		$metabox_handler->register_metabox_group(
+			array(
+				'menu_mb'
+			)
+		);
+	}
+
+	public function register_shortcodes() {
+		$manager = new Shortcode_Manager();
+		$manager->register_shortcodes(
+			array(
+				'buttons_sh'
+			)
+		);
 	}
 }

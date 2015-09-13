@@ -4,6 +4,7 @@
   width: 100%;
   min-height: 60px;
   display: block;
+  margin-top: 20px;
   margin-bottom: 20px;
   background: $navbar-color; // Change this color in settings to change the navbar color
   position: relative;
@@ -129,8 +130,6 @@
       padding: 0 ms(0);
       white-space: nowrap;
       color: $navbar-link-color;
-      text-shadow: 0 1px 2px darken($navbar-color, 20%),
-                   0 1px 0 darken($navbar-color, 20%);
       @include line-and-height(height-calc($larger - 3));
       @include font-size($norm);
       i.icon-popup {
@@ -343,8 +342,9 @@
 .gumby-no-touch .navbar ul li:hover > a,
 .gumby-touch .navbar ul li.active > a {
   position: relative;
-  background: $info-hover-color;
+  background: $brand-orange;
   z-index: 1000;
+  color:$white;
 }
 
 .gumby-no-touch .navbar ul li:hover .dropdown,
@@ -435,6 +435,6 @@
   li.active a, dd.active a {
     background: $navbar-color;
     padding: 5px 9px;
-    text-shadow: 0 1px 1px $navbar-color;
+    // text-shadow: 0 1px 1px $navbar-color;
   }
 }
