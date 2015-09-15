@@ -2104,7 +2104,7 @@ figure.effect-jazz:hover figcaption::after { opacity: 1; -webkit-transform: rota
 
 figure.effect-jazz:hover h2, figure.effect-jazz:hover p { opacity: 1; -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); }
 
-.frontpage__main_content { padding: 50px; background-image: url(../img/jared_white.jpg); background-size: cover; }
+.frontpage__main_content { padding: 50px; background-image: url(../img/jared_white_left.jpg); background-size: cover; }
 .frontpage__main_content .entry-content { margin-left: 100px; }
 
 .front-hero { background-size: cover; min-height: 700px; background-position: center; position: relative; }
