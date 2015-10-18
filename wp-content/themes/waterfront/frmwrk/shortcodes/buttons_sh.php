@@ -15,4 +15,4 @@ function get_button( $atts, $content = null ) {
 
 	return "<div class='{$a['class']} {$a['size']} {$a['type']} btn'><a href='{$url}'>" . do_shortcode( $content ) . "</a></div>";
 }
-add_shortcode( 'button', 'get_button' );
+add_shortcode( 'button', 'get_button' ); 

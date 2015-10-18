@@ -11,20 +11,23 @@
 
 .hero-weather__current{
 
+
+
     .currently {
 		text-transform: uppercase;
 		font-weight: 500;
 		font-size: 14px;
+		padding: 10px 0px;
     }
 
     .degrees {
     	display: block;
 	    position: absolute;
-	    top: 65px;
+	    top: 75px;
 	    left: 125px;
 	    text-transform: uppercase;
 	    font-weight: 100;
-	    font-size: 110px;
+	    font-size: 100px;
 
 	    .symbol {
 	    	vertical-align: super;
@@ -52,10 +55,11 @@
 
 	}
 
-	// #seas {
-	// 	left: auto;
-	// 	right: 10px;
-	// }
+	#condition {
+		.stat-value {
+			text-transform: uppercase;
+		}
+	}
 
 	// #wind-speed {
 	// 	left: 106px;

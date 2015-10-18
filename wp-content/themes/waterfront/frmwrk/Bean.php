@@ -36,6 +36,7 @@ class Bean {
 		$this->register_post_types();
 		$this->register_metaboxes();
 		$this->register_shortcodes();
+		$this->register_widgets();
 		$this->script_handler();
 		//
 		add_action( 'after_setup_theme', array( $this, 'liftoff' ) );
@@ -49,6 +50,7 @@ class Bean {
 		require BEAN_FRAMEWORK_DIR . '/inc/Post_Type_Manager.php';
 		require BEAN_FRAMEWORK_DIR . '/inc/Metabox_Handler.php';
 		require BEAN_FRAMEWORK_DIR . '/inc/Shortcode_Manager.php';
+		require BEAN_FRAMEWORK_DIR . '/inc/Widget_Manager.php';
 
 		/**
 		 * Implement the Custom Header feature.
@@ -101,7 +103,9 @@ class Bean {
 
 		$metabox_handler->register_metabox_group(
 			array(
-				'menu_mb'
+				'menu_mb',
+				'location_mb',
+				'acts_mb'
 			)
 		);
 	}
@@ -110,7 +114,17 @@ class Bean {
 		$manager = new Shortcode_Manager();
 		$manager->register_shortcodes(
 			array(
-				'buttons_sh'
+				'buttons_sh',
+				'google_street_view_sh'
+			)
+		);
+	}
+
+	public function register_widgets() {
+		$manager = new Widget_Manager();
+		$manager->register_widgets(
+			array(
+				'Weather_Widget'
 			)
 		);
 	}

@@ -11,10 +11,12 @@ class Script_Handler {
 
 	public function register_scripts() {
 		wp_register_style( 'waterfront-style', get_template_directory_uri() . '/css/app.css', '', '0.5');
+		wp_register_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome/font-awesome.css', '', '4.2.2');
 
 		wp_register_script( 'modernizr', get_template_directory_uri(). '/js/libs/modernizr-2.6.2.min.js', array(), '', false );
 
 		wp_register_script( 'waterfront-gumby', get_template_directory_uri() . '/js/app.min.js', array('jquery'), '0.5', true );
+		wp_register_script( 'gumby-init', get_template_directory_uri() . '/js/libs/gumby.init.js', array('jquery'), '0.5', true );
 
 		wp_register_script( 'waterfront-plugin', get_template_directory_uri() . '/js/plugins.js', array('jquery'), '0.1', true );
 		wp_register_script( 'waterfront-main', get_template_directory_uri(), '/js/main.js', array( 'jquery' ), '0.1', true );
@@ -23,9 +25,11 @@ class Script_Handler {
 	public function enqueue_scripts() {
 
 		wp_enqueue_style( 'waterfront-style' );
+		wp_enqueue_style( 'font-awesome' );
 
 		wp_enqueue_script( 'modernizr' );
 		wp_enqueue_script( 'waterfront-gumby' );
+		wp_enqueue_script( 'gumby-init' );
 
 		wp_enqueue_script( 'waterfront-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

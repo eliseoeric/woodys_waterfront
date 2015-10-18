@@ -88,15 +88,53 @@ class Liftoff {
 
 
 	public function register_widgets_init() {
-		register_sidebar( array(
-			'name'          => esc_html__( 'Sidebar', 'waterfront' ),
-			'id'            => 'sidebar-1',
-			'description'   => '',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</aside>',
-			'before_title'  => '<h1 class="widget-title">',
-			'after_title'   => '</h1>',
-		) );
+		$widgets = array(
+			array(
+				'name'          => 'Footer Column 1',
+                'id'            => 'footer_clm_1',
+                'before_widget' => '<div class="footer-widget"><div class="footer-widget__content">',
+                'after_widget'  => '</div></div>',
+                'before_title'  => '<h5 class="">',
+                'after_title'   => '</h5>',
+			),
+			array(
+                'name'          => 'Footer Column 2',
+                'id'            => 'footer_clm_2',
+                'before_widget' => '<div class="footer-widget"><div class="footer-widget__content">',
+                'after_widget'  => '</div></div>',
+                'before_title'  => '<h5 class="">',
+                'after_title'   => '</h5>',
+            ),
+            array(
+                'name'          => 'Footer Column 3',
+                'id'            => 'footer_clm_3',
+                'before_widget' => '<div class="footer-widget"><div class="footer-widget__content">',
+                'after_widget'  => '</div></div>',
+                'before_title'  => '<h5 class="">',
+                'after_title'   => '</h5>',
+            ),
+            array(
+                'name'          => 'Main Sidebar',
+                'id'            => 'sidebar-1',
+                'before_widget' => '<div class="sidebar"><div class="sidebar-widget__content">',
+                'after_widget'  => '</div></div>',
+                'before_title'  => '<h3 class="">',
+                'after_title'   => '</h3>',
+            ),
+            array(
+                'name'          => 'Frontpage',
+                'id'            => 'frontpage-1',
+                'before_widget' => '',
+                'after_widget'  => '',
+                'before_title'  => '<h3 class="">',
+                'after_title'   => '</h3>',
+            ),
+		);
+
+		foreach( $widgets as $widget ) 
+		{
+			register_sidebar( $widget );
+		}
 	}
 
 	public function remove_wp_emoji() {

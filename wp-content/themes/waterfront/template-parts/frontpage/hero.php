@@ -27,33 +27,11 @@
 			<div class="large primary btn"><a href="#">Call Now</a></div>
 		</div>
 		<div class="three columns front-hero__weather">
-			<div class="hero-weather">
-				<div class="hero-weather__current">
-					<span class="currently">Currently</span>
-					<span class="degrees">88<span class="symbol">°</span></span>
-					<div class="icon_weather sun-shower">
-						<div class="cloud"></div>
-						<div class="sun">
-							<div class="rays"></div>
-						</div>
-						<div class="rain"></div>
-					</div>
-				</div>
-				<div id="marineforecast" class="marineforecast row">
-					<div class="weather-stat four columns" id="sunset">
-						<div class="stat-label">Sunset</div>
-						<div class="stat-value">8:39<span class="symbol">PM</span></div>
-					</div>
-					<div class="weather-stat four columns" id="wind-speed">
-						<div class="stat-label">Wind</div>
-						<div class="stat-value">6-12<span class="symbol">kn</span></div>
-					</div>
-					<div class="weather-stat four columns" id="seas">
-						<div class="stat-label">Seas</div>
-						<div class="stat-value">2<span class="symbol">ft</span></div>
-					</div>
-				</div>
-			</div>
-		</div>
+			<?php 
+				if( is_active_sidebar( 'frontpage-1' ) )
+				{
+					dynamic_sidebar( 'frontpage-1' );
+				}
+			?>
 	</div>
 </section>

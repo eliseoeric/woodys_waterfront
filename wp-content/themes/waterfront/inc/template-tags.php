@@ -37,6 +37,25 @@ function the_posts_navigation() {
 }
 endif;
 
+if( ! function_exists('waterfront_image_overlay') ):
+/**
+ * Wrap image in an overlay with a nifty effect
+ *
+ */
+function waterfront_image_overlay( $image_url, $desc = "", $alt = "", $url = "", $classes = "" ) {
+	?>
+	<figure class="effect-jazz <?php echo $classes; ?>">
+		<img src="<?php echo $image_url ?>" alt="<?php echo $alt; ?>">
+		<figcaption>
+			<!-- <h2 class="">Woody's <span>Waterfront</span></h2> -->
+			<p><?php echo $desc; ?></p>
+			<a href="<?php echo $url; ?>">View more</a>
+		</figcaption>			
+	</figure>	
+	<?php
+}
+endif;
+
 if ( ! function_exists( 'the_post_navigation' ) ) :
 /**
  * Display navigation to next/previous post when applicable.

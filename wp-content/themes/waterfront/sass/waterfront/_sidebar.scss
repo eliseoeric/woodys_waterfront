@@ -1,0 +1,13 @@
+#secondary.widget-area {
+	padding: 50px;
+}
+
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=image], .gform_wrapper .gform_footer input[type=submit] {
+	
+}
+
+.gform_footer .top_label > input[type=submit]{
+	@extend .btn;
+	@extend .large;
+	@extend .primary;
+}

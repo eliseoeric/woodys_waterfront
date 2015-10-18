@@ -29,17 +29,6 @@
 
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
-<!-- Facebook Metadata /-->
-<meta property="fb:page_id" content="" />
-<meta property="og:image" content="" />
-<meta property="og:description" content=""/>
-<meta property="og:title" content=""/>
-
-<!-- Google+ Metadata /-->
-<meta itemprop="name" content="">
-<meta itemprop="description" content="">
-<meta itemprop="image" content="">
-
 <?php wp_head(); ?>
 </head>
 
@@ -59,16 +48,17 @@
 			</h1>
 		</div>
 
-		<nav id="site-navigation" class="eight columns" role="navigation">
+		<nav id="site-navigation" class="six columns" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav>
 
-		<div id="quick-contact" class="two columns">
+		<div id="quick-contact" class="quick-contact">
 			<ul>
-				<li><strong><i class="icon-phone"></i>727-360-9164</strong></li>
-				<li><i class="icon-facebook-squared"></i></li>
-				<li><i class="icon-twitter"></i></li>
-				<li><i class="icon-thumbs-up"></i></li>
+				<li class="quick-contact__item--phone"><strong><a href="tel:727-360-9164"><i class="fa fa-phone"></i>727-360-9164</a></strong></li>
+				<li class="quick-contact__item"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+				<li class="quick-contact__item"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+				<li class="quick-contact__item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li class="quick-contact__item"><a href="#"><i class="fa fa-tripadvisor"></i></a></li>
 			</ul>
 		</div>
 	</header>

@@ -90,3 +90,29 @@
 .cl-orange {
 	color: $brand-orange;
 }
+
+.wave-border {
+	position: relative;
+
+	&:before {
+		content: '';
+		background: url(../img/wave_border.png) repeat-x top;
+		height: 100px;
+		width: 100%;
+		top:-80px;
+		left:0;
+		position: absolute;
+		display: block;
+	}
+}
+
+.entertainer-img {
+	figure {
+		max-height: 250px;
+	}
+	padding: 0px 50px;
+}
+
+.entertainer-details {
+	padding: 25px;
+}

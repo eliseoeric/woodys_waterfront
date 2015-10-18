@@ -12,11 +12,37 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'waterfront' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'waterfront' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'waterfront' ), 'waterfront', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="row">
+			<div class="footer-column alpha">
+				<?php 
+					if( is_active_sidebar( 'footer_clm_1' ) )
+					{
+						dynamic_sidebar( 'footer_clm_1' );
+					}
+				?>
+			</div>
+			<div class="footer-column wide">
+				<?php 
+					if( is_active_sidebar( 'footer_clm_2' ) )
+					{
+						dynamic_sidebar( 'footer_clm_2' );
+					}
+				?>
+			</div>
+			<div class="footer-column">
+				<?php 
+					if( is_active_sidebar( 'footer_clm_3' ) )
+					{
+						dynamic_sidebar( 'footer_clm_3' );
+					}
+				?>
+			</div>
+		 </div>
+		 <div class="row">
+			<div class="site-info">
+				<p>Proudly designed by <a href="http://thinkgeneric.com">ThinkGeneric</a>.</p>
+			</div><!-- .site-info -->
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
