@@ -29,6 +29,10 @@ class Liftoff {
 		add_action( 'widgets_init', array( $this, 'register_widgets_init' ) );
 
 		add_action( 'init', array($this, 'remove_wp_emoji' ) );
+
+		add_filter( 'gform_pre_render', array( $this, 'ww_add_input_class' ) );
+
+		add_filter( 'gform_submit_button', array( $this, 'ww_submit_button' ), 10, 2 );
 	}
 
 	public function manage_theme_supports() {
@@ -86,6 +90,21 @@ class Liftoff {
 		$GLOBALS['content_width'] = apply_filters( 'waterfront_content_width', 1000 );
 	}
 
+	public function ww_add_input_class( $form ) {
+		foreach( $form['fields'] as &$field ) {
+
+			$class = 'input';
+			$field['size'] .= ' ' . $class;
+		}
+
+		return $form;
+	}
+
+	public function ww_submit_button( $button, $form ) {
+		$button = "<div class='medium primary btn'>" . $button . '</div>';
+
+		return $button;
+	}
 
 	public function register_widgets_init() {
 		$widgets = array(

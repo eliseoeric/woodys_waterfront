@@ -1,5 +1,19 @@
-#secondary.widget-area {
-	padding: 50px;
+.widget-area {
+	margin: 0 50px 50px 50px;
+	padding: 25px;
+	// border: 1px solid $brand-grey;
+	// border-radius: $button-radius;
+
+	&__location {
+		background: $brand-neutral;
+		border-radius: $bigger-radius;
+
+		// .sidebar-widget__content {
+		// 	h3, label {
+		// 		color: $white
+		// 	}
+		// }
+	}
 }
 
 .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=image], .gform_wrapper .gform_footer input[type=submit] {

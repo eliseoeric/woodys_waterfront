@@ -15,6 +15,14 @@ function menu_mb( $meta_boxes ) {
         )
 	);
 
+    $menu_items->add_field(
+        array(
+            'id' => $prefix . 'menu_icon',
+            'name' => 'Menu Icon',
+            'description' => '',
+            'type' => 'file'
+        )
+    );
 	$menu_item_group = $menu_items->add_field(
 		array(
 			'id'          => $prefix . 'menu_items',
@@ -39,6 +47,7 @@ function menu_mb( $meta_boxes ) {
         )
     );
 
+
     $menu_items->add_group_field(
         $menu_item_group,
         array(
@@ -56,6 +65,16 @@ function menu_mb( $meta_boxes ) {
             'desc' => '',
             'id'   => 'item_price',
             'type' => 'text',
+        )
+    );
+
+    $menu_items->add_group_field(
+        $menu_item_group,
+        array(
+        'name' => 'Item Image',
+        'desc' => '',
+        'id' => 'item_image',
+        'type' => 'file'
         )
     );
 }

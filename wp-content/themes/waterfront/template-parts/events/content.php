@@ -55,4 +55,4 @@
 	<?php endforeach; ?>
 </section>
 
-<?php get_template_part( 'template-parts/banners/promo-hh', 'blue'); ?>
+<?php get_template_part( 'template-parts/banners/promo-gc', 'blue'); ?>

@@ -25,3 +25,13 @@ body.page {
 	
 }
 
+li.current_page_item {
+	position: relative;
+    background: $brand-orange;
+    z-index: 1000;
+    color: $white;
+}
+
+.navbar ul li.current_page_item > a {
+	color: $white;
+}

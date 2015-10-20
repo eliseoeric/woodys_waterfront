@@ -3,10 +3,11 @@
 
 //Brand Colors 
 $brand-dark-blue: #0F385D;
-$brand-neutral: #FBEFC5;
+$brand-neutral: #FDEBCA;
 $brand-green: #4AFD5C;
 $brand-blue: #00A1FB;
 $brand-orange: #FA5333;
+$brand-grey: #becbd2;
 
 
 
@@ -88,7 +89,7 @@ $navbar-link-color: $body-font-color;
 
 $primary-color: $brand-blue;
 $secondary-color: $brand-orange;
-$default-color: lighten($brand-neutral, 10);
+$default-color: $brand-grey;
 $info-color: #00A6FB;
 $danger-color: #ca3838;
 $warning-color: #f6b83f;
@@ -135,7 +136,7 @@ $form-select-background: $white;
 $form-select-color: #555;
 
 // Tabs
-$tab-height: 42px;
+$tab-height: 52px;
 
 // Navigation
 $navcontain-height: 80px; // makes space at the top of a document for when using a fixed nav
