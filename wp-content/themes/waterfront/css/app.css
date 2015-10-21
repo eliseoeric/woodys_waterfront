@@ -2177,3 +2177,9 @@ span.tab-title { padding: 10px 0; top: -8px; position: relative; }
 @media only screen and (max-width: 768px) { .wm__item { width: auto !important; float: none; margin-left: 0; margin-right: 0; } }
 .wm__item h5, .wm__item p, .wm__item span { color: #00A1FB; }
 .wm__item--image { max-height: 250px; overflow: hidden; vertical-align: middle; margin-bottom: 15px; }
+
+.gform_page_fields, .gform_page_footer { width: 100%; max-width: 1640px; min-width: 320px; margin: 0 auto; padding-left: 20px; padding-right: 20px; *zoom: 1; }
+.gform_page_fields:before, .gform_page_fields:after, .gform_page_footer:before, .gform_page_footer:after { content: ""; display: table; }
+.gform_page_fields:after, .gform_page_footer:after { clear: both; }
+
+.gform_page_footer { margin-top: 30px; }

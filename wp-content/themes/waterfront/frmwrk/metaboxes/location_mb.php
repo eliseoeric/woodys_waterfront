@@ -7,8 +7,16 @@ function location_mb( $meta_boxes ) {
 		array(
             'id'         => 'location_content',
             'title'      => 'Content',
-            'object_types'      => array ( 'page' ),
-            'show_on'    => array ( 'key' => 'template', 'value' => 'template-location', 'key' => 'template', 'value' => 'template-events' ),
+            'object_types'      => array( 'page' ),
+            'show_on'    => 
+                array( 
+                    'key' => 'template', 
+                    'value' => 'template-location', 
+                    'key' => 'template', 
+                    'value' => 'template-events',
+                    'key' => 'template',
+                    'value' => 'template-reviews'
+                ),
             'context'    => 'normal',
             'priority'   => 'high',
             'show_names' => true,
