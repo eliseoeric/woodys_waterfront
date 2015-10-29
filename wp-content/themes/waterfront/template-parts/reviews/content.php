@@ -31,7 +31,8 @@
 			'after'  => '</div>',
 		) );
 		?>
-</div><!-- .entry-content -->
+	</div><!-- .entry-content -->
+</section>
 
 <section class="wrapper wave-border">
 	<div class="row">
@@ -40,5 +41,3 @@
 		</div>
 	</div>
 </section>
-
-<?php get_template_part( 'template-parts/banners/promo-hh', 'green'); ?>

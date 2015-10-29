@@ -54,6 +54,13 @@
 
 		<div id="quick-contact" class="quick-contact">
 			<ul>
+				<?php // add the woocommerce cart  ?>
+				<?php if( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) : ?>
+					<?php $count = WC()->cart->cart_contents_count; ?>
+					<li class="quick-contact__item--cart"><strong><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View Your Shopping Cart' ); ?>">
+						<i class="fa fa-shopping-cart"></i><?php if( $count > 0 ) echo '(' . $count . ')'; ?>
+					</a></strong></li>
+				 <?php endif; ?>
 				<li class="quick-contact__item--phone"><strong><a href="tel:727-360-9164"><i class="fa fa-phone"></i>727-360-9164</a></strong></li>
 				<li class="quick-contact__item"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
 				<li class="quick-contact__item"><a href="#"><i class="fa fa-twitter-square"></i></a></li>

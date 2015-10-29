@@ -1,19 +1,16 @@
 <?php
-/**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package waterfront
- */
+/*
+|--------------------------------------------------------------------------
+| template-shop.php
+|--------------------------------------------------------------------------
+| Template Name: Shop Page 
+| Shop template for woocommerce that allows content from the main page
+|
+*/
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php do_action( 'woocommerce_before_main_content' ); ?>
@@ -31,8 +28,13 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
+			<?php
+				/**
+				 * woocommerce_sidebar hook
+				 *
+				 * @hooked woocommerce_get_sidebar - 10
+				 */
+				do_action( 'woocommerce_sidebar' );
+			?>
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

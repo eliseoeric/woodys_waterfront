@@ -79,6 +79,10 @@
 	background-color: $brand-neutral;
 }
 
+.bg-grey {
+	background-color: lighten($brand-grey,10);
+}
+
 .cl-white{
 	color: $white;
 }
@@ -116,3 +120,4 @@
 .entertainer-details {
 	padding: 25px;
 }
+

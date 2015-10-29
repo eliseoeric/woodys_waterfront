@@ -27,9 +27,9 @@
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'waterfront' ),
 			'after'  => '</div>',
 		) );
-		?>
-</div><!-- .entry-content -->
-
+			?>
+	</div><!-- .entry-content -->
+</section>
 <section class="wrapper wave-border">
 	<?php $entertainers = get_post_meta( get_the_ID(), '_WW_entertainers', true ); ?>
 	<?php $count = 0; ?>
@@ -54,5 +54,3 @@
 	<?php $count++; ?>
 	<?php endforeach; ?>
 </section>
-
-<?php get_template_part( 'template-parts/banners/promo-gc', 'blue'); ?>

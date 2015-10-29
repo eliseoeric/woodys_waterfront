@@ -38,7 +38,7 @@ class Liftoff {
 		
 		add_filter( 'gform_previous_button', array( $this, 'ww_previous_button' ), 10, 2 );
 
-		add_filter( 'gform_field_choice_markup_pre_render', array( $this, 'ww_choice_markup' ), 10, 4 );
+		// add_filter( 'gform_field_choice_markup_pre_render', array( $this, 'ww_choice_markup' ), 10, 4 );
 	}
 
 	public function manage_theme_supports() {
@@ -124,7 +124,10 @@ class Liftoff {
 	}
 
 	public function ww_choice_markup( $choice_markup, $choice, $field, $value ) {
-		
+		dd($field);
+		if( $field->get_input_type() == 'radio' ) {
+			return "<li class='gchoice_{$field['formId']}_{$field['id']} field'><label class='radio' for='radio'><input name='radio' id='radio1' value='' type='radio'><span><i class='icon-dot'></i></span>Radio Button</label></li>";
+		}
 	}
 
 	public function register_widgets_init() {
@@ -156,6 +159,14 @@ class Liftoff {
             array(
                 'name'          => 'Main Sidebar',
                 'id'            => 'sidebar-1',
+                'before_widget' => '<div class="sidebar"><div class="sidebar-widget__content">',
+                'after_widget'  => '</div></div>',
+                'before_title'  => '<h3 class="">',
+                'after_title'   => '</h3>',
+            ),
+            array(
+                'name'          => 'Woocommerce Sidebar',
+                'id'            => 'sidebar-woo',
                 'before_widget' => '<div class="sidebar"><div class="sidebar-widget__content">',
                 'after_widget'  => '</div></div>',
                 'before_title'  => '<h3 class="">',

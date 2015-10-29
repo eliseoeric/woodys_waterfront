@@ -17,7 +17,8 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 		<?php get_template_part( 'template-parts/food-menu/menu' ); ?>
-		<?php get_template_part( 'template-parts/banners/promo-hh', 'green' ); ?>
+		<?php $banner_type = get_post_meta( get_the_ID(), '_WW_banner_type', true ); ?>
+		<?php get_template_part( 'template-parts/banners/' . $banner_type ); ?>
 	</main>
 </div>
 

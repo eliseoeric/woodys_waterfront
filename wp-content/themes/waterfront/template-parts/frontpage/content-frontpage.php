@@ -24,7 +24,8 @@
 	</div><!-- .entry-content -->
 
 	<!-- Start Happy Hour Banner -->
-	<?php get_template_part('template-parts/banners/promo-hh', 'blue' ); ?>
+	<?php $banner_type = get_post_meta( get_the_ID(), '_WW_banner_type', true ); ?>
+	<?php get_template_part( 'template-parts/banners/' . $banner_type ); ?>
 	<!-- End Happy Hour banner -->
 
 	<!-- Start Image Showcase -->

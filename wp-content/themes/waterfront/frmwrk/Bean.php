@@ -38,6 +38,7 @@ class Bean {
 		$this->register_shortcodes();
 		$this->register_widgets();
 		$this->script_handler();
+		$this->handle_woocommerce();
 		//
 		add_action( 'after_setup_theme', array( $this, 'liftoff' ) );
 
@@ -51,6 +52,7 @@ class Bean {
 		require BEAN_FRAMEWORK_DIR . '/inc/Metabox_Handler.php';
 		require BEAN_FRAMEWORK_DIR . '/inc/Shortcode_Manager.php';
 		require BEAN_FRAMEWORK_DIR . '/inc/Widget_Manager.php';
+		require BEAN_FRAMEWORK_DIR . '/inc/Woocommerce_Handler.php';
 
 		/**
 		 * Implement the Custom Header feature.
@@ -83,6 +85,11 @@ class Bean {
 		$liftoff->init();
 	}
 
+	public function handle_woocommerce() {
+		$handle = new Woocommerce_Handler();
+		$handle->init();
+	}
+
 	public function script_handler() {
 		$sh = new Script_Handler();
 		$sh->init();
@@ -93,7 +100,8 @@ class Bean {
 
 		$post_manager->register_posts(
 			array(
-				'menu_pt'
+				'menu_pt',
+				'review_pt'
 			)
 		);
 	}
@@ -105,7 +113,8 @@ class Bean {
 			array(
 				'menu_mb',
 				'location_mb',
-				'acts_mb'
+				'acts_mb',
+				'banner_mb',
 			)
 		);
 	}

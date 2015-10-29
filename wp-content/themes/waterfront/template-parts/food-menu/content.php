@@ -27,4 +27,5 @@
 			'after'  => '</div>',
 		) );
 		?>
-</div><!-- .entry-content -->
+	</div><!-- .entry-content -->
+</section>

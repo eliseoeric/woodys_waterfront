@@ -12,3 +12,89 @@
 .gform_page_footer {
 	margin-top: 30px;
 }
+
+// .gform_wrapper input[type=email],
+// .gform_wrapper input[type=number], 
+// .gform_wrapper input[type=password], 
+// .gform_wrapper input[type=tel], 
+// .gform_wrapper input[type=text], 
+// .gform_wrapper input[type=url] {
+// 	@include font-size($small);
+// }
+
+.gform_wrapper form input.input {
+	@include font-size( $norm );
+	height: 45px;
+    padding: 5px 10px;
+}
+
+.gform_wrapper form input.datepicker {
+	width: 7.75em!important;
+}
+
+#gform_page_4_1, #gform_page_4_2, #gform_page_4_3 {
+	// padding: 35px 0;
+
+	.gf_list_5col {
+		padding: 15px 0;
+	}
+
+}
+
+.gform_wrapper #gform_4{
+	.gf_progressbar {
+		background-image: none;
+		background-color: $brand-grey;
+		height: 30px;
+	}
+
+	.percentbar_blue {
+		background-image: none;
+		background-color: $brand-blue;
+		height: 30px;
+	}
+
+	.gf_progressbar_wrapper h3.gf_progressbar_title {
+		@include font-size( $large );
+		text-align: center;
+	}
+
+	.gf_progressbar_percentage span {
+		@include font-size($norm);
+		line-height: 1.6rem;
+	}
+}
+
+.gform_wrapper #gform_4 .gfield_checkbox li label, .gform_wrapper #gform_4 .gfield_radio li label {
+	// height: 20px;
+    display: inline-block;
+    font-family: Helvetica, arial, verdana, sans-serif;
+    font-weight: bold;
+    // line-height: 20px;
+    text-align: center;
+    color: $body-font-color;
+    padding: 0 15px;
+    // font-size: 14px;
+    // font-size: 0.875pxrem;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background: $white;
+    border: 1px solid $white;
+    // transition: all, 0.25s, ease;
+    &:active,&:focus {
+    	color:$white;
+	    background: shade($brand-blue, 13);
+	    border: 1px solid shade($brand-blue, 13);
+    }
+	&:hover {
+		color: shade($brand-blue,10);
+		font-weight: bold;
+	}
+}
+
+.gform_wrapper #gform_4 ul.gfield_checkbox li input[type=checkbox]:checked+label, .gform_wrapper #gform_4 ul.gfield_radio li input[type=radio]:checked+label {
+	color:$white;
+    background: $brand-blue;
+    border: 1px solid $brand-blue;
+}
