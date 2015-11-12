@@ -9,11 +9,15 @@
 */
 ?>
 <?php $reviews = new WP_Query( array( 'post_type' => 'review') ); ?>
-
+<?php 
+	wp_enqueue_style( 'slick_css' );
+	wp_enqueue_style( 'slick-theme_css' );
+	wp_enqueue_script( 'slick_js' );
+ ?>
 <div class="wrapper bg-grey">
 	<div class="row">
 		<div class="eight columns centered">
-			<div class="row">
+			<div class="row tripadvisor_reviews">
 				<?php if( $reviews->have_posts() ) : while( $reviews->have_posts() ) : $reviews->the_post(); ?>
 					<div class="six columns pd-l-20 pd-r-20">
 						<div class="review review__block">

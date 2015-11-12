@@ -8,7 +8,7 @@
 |
 */
 ?>
-<section id="" <?php post_class(); ?>>
+<section id="" <?php post_class('wrapper'); ?>>
 	<div class="row wrapper full_width double food-menu__main_content" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post_id )); ?>');">
 		<div class="four columns push_one entry-content">
 			<header class="entry-header">

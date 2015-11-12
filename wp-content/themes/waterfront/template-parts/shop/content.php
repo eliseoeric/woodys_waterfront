@@ -11,7 +11,7 @@
 
 <?php $shop_page = get_post( wc_get_page_id( 'shop' ) ); ?>
 
-<section id="" <?php post_class(); ?>>
+<section id="" <?php post_class('wrapper'); ?>>
 	<div class="row wrapper full_width double food-menu__main_content" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $shop_page->ID )); ?>');">
 		<div class="seven columns">
 			
