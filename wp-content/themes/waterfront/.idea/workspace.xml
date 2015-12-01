@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hero.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/template-parts/frontpage/hero.php">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68252325" vertical-offset="0" max-vertical-offset="967">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="942">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,6 +60,7 @@
         <option value="$PROJECT_DIR$/framework/class-framework.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/template-parts/frontpage/hero.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -892,6 +893,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68252325" vertical-offset="0" max-vertical-offset="967">
           <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding>
+            <marker date="1448948977627" expanded="false" signature="-1:-1" placeholder=" The template part for displaying the website hero image and weather ..." />
+            <marker date="1448948977627" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1448948977627" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1448948977627" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1448948977627" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1448948977627" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1448948977627" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1448948977627" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1448948977627" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="942">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
