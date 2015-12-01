@@ -2,6 +2,8 @@
 
 ### OSX ###
 .DS_Store
+.idea
+.sass-cache
 .AppleDouble
 .LSOverride
 
