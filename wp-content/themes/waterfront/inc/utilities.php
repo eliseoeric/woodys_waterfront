@@ -1,6 +1,9 @@
-<?php 
-
-function dd( $param ) {
-	var_dump( $param );
-	die();
-}
+<?php
+//
+////Adding a dump and die for debugging
+//function dd( $var ) {
+//	echo '<pre>';
+//	var_dump( $var );
+//	echo '</pre>';
+//	die();
+//}

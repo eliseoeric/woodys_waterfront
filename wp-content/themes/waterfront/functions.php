@@ -13,10 +13,10 @@ if( !defined( 'WPINC' ) )
 	die;
 }
 
-define( 'BEAN_DIR', get_template_directory() . '/' );
+define( 'WATERFRONT_DIR', get_template_directory() . '/' );
 
-include_once( BEAN_DIR . '/frmwrk/Bean.php' );
+require( WATERFRONT_DIR . '/framework/class-framework.php' );
 
-$bean = Bean::get_instance();
+$framework = Framework::get_instance();
 
-$bean->init();
+$framework->init();

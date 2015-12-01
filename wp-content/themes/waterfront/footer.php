@@ -40,7 +40,7 @@
 		 </div>
 		 <div class="row">
 			<div class="site-info">
-				<p>Proudly designed by <a href="http://thinkgeneric.com">ThinkGeneric</a>.</p>
+
 			</div><!-- .site-info -->
 		</div>
 	</footer><!-- #colophon -->

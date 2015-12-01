@@ -43,7 +43,11 @@
 		<div class="site-branding two columns logo">
 			<h1 class="site-title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img src="<?php echo get_template_directory_uri() . '/img/red-no-stroke.png'; ?>" alt="Woody's Waterfront"/>
+					<?php
+					$options = get_option('framework_options');
+					$logo_url = $options['_waterfront_logo'];
+					?>
+					<img src="<?php echo $logo_url; ?>" alt="Woody's Waterfront"/>
 				</a>
 			</h1>
 		</div>

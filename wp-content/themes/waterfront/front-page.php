@@ -10,7 +10,6 @@
 get_header(); ?>
 
 <div id="frontpage" class="content-area">
-
 	<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'template-parts/frontpage/hero' ); ?>
