@@ -2002,7 +2002,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .hero-image { background-position-y: 25%; }
 
-body.page { border-top: 4px solid #FA5333; }
+body { border-top: 4px solid #FA5333; }
 
 .navbar .logo { margin: 0; }
 
