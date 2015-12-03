@@ -2192,10 +2192,10 @@ span.tab-title { padding: 10px 0; top: -8px; position: relative; }
 
 #gform_page_2_1 .gf_list_5col, #gform_page_2_2 .gf_list_5col, #gform_page_2_3 .gf_list_5col { padding: 15px 0; }
 
-.gform_wrapper #gform_4 .gf_progressbar { background-image: none; background-color: #becbd2; height: 30px; }
-.gform_wrapper #gform_4 .percentbar_blue { background-image: none; background-color: #00A1FB; height: 30px; }
-.gform_wrapper #gform_4 .gf_progressbar_wrapper h3.gf_progressbar_title { font-size: 26px; font-size: 1.625rem; text-align: center; }
-.gform_wrapper #gform_4 .gf_progressbar_percentage span { font-size: 16px; font-size: 1rem; line-height: 1.6rem; }
+.gform_wrapper #gform_2 .gf_progressbar { background-image: none; background-color: #becbd2; height: 30px; }
+.gform_wrapper #gform_2 .percentbar_blue { background-image: none; background-color: #00A1FB; height: 30px; }
+.gform_wrapper #gform_2 .gf_progressbar_wrapper h3.gf_progressbar_title { font-size: 26px; font-size: 1.625rem; text-align: center; }
+.gform_wrapper #gform_2 .gf_progressbar_percentage span { font-size: 16px; font-size: 1rem; line-height: 1.6rem; }
 
 .gform_wrapper #gform_2 .gfield_checkbox li label, .gform_wrapper #gform_2 .gfield_radio li label { display: inline-block; font-family: Helvetica, arial, verdana, sans-serif; font-weight: bold; text-align: center; color: #555555; padding: 0 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background: #fff; border: 1px solid #fff; }
 .gform_wrapper #gform_2 .gfield_checkbox li label:active, .gform_wrapper #gform_2 .gfield_checkbox li label:focus, .gform_wrapper #gform_2 .gfield_radio li label:active, .gform_wrapper #gform_2 .gfield_radio li label:focus { color: #fff; background: #008cda; border: 1px solid #008cda; }
