@@ -15,7 +15,7 @@
 
 	<!-- Start Menu Navigation -->
 	<div class="row">
-		<div class="ten columns centered">
+		<div class="twelve columns">
 			<section class="tabs wm">
 				<ul class="tab-nav wm__nav">
 					<?php if( $menus->have_posts() ) : while( $menus->have_posts() ) : $menus->the_post(); ?>
