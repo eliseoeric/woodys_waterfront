@@ -1958,7 +1958,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .wrapper + .wrapper { padding: 55px 20px 50px 20px; }
 
-.wrapper.double { padding: 110px 20px 100px 20px; }
+.wrapper.double { padding: 80px 20px 80px 20px; }
 
 .wrapper.no_vert { padding: 0px 20px 0px 20px; }
 
@@ -2190,18 +2190,18 @@ span.tab-title { padding: 10px 0; top: -8px; position: relative; }
 
 .gform_wrapper form input.datepicker { width: 7.75em !important; }
 
-#gform_page_4_1 .gf_list_5col, #gform_page_4_2 .gf_list_5col, #gform_page_4_3 .gf_list_5col { padding: 15px 0; }
+#gform_page_2_1 .gf_list_5col, #gform_page_2_2 .gf_list_5col, #gform_page_2_3 .gf_list_5col { padding: 15px 0; }
 
 .gform_wrapper #gform_4 .gf_progressbar { background-image: none; background-color: #becbd2; height: 30px; }
 .gform_wrapper #gform_4 .percentbar_blue { background-image: none; background-color: #00A1FB; height: 30px; }
 .gform_wrapper #gform_4 .gf_progressbar_wrapper h3.gf_progressbar_title { font-size: 26px; font-size: 1.625rem; text-align: center; }
 .gform_wrapper #gform_4 .gf_progressbar_percentage span { font-size: 16px; font-size: 1rem; line-height: 1.6rem; }
 
-.gform_wrapper #gform_4 .gfield_checkbox li label, .gform_wrapper #gform_4 .gfield_radio li label { display: inline-block; font-family: Helvetica, arial, verdana, sans-serif; font-weight: bold; text-align: center; color: #555555; padding: 0 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background: #fff; border: 1px solid #fff; }
-.gform_wrapper #gform_4 .gfield_checkbox li label:active, .gform_wrapper #gform_4 .gfield_checkbox li label:focus, .gform_wrapper #gform_4 .gfield_radio li label:active, .gform_wrapper #gform_4 .gfield_radio li label:focus { color: #fff; background: #008cda; border: 1px solid #008cda; }
-.gform_wrapper #gform_4 .gfield_checkbox li label:hover, .gform_wrapper #gform_4 .gfield_radio li label:hover { color: #0090e1; font-weight: bold; }
+.gform_wrapper #gform_2 .gfield_checkbox li label, .gform_wrapper #gform_2 .gfield_radio li label { display: inline-block; font-family: Helvetica, arial, verdana, sans-serif; font-weight: bold; text-align: center; color: #555555; padding: 0 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background: #fff; border: 1px solid #fff; }
+.gform_wrapper #gform_2 .gfield_checkbox li label:active, .gform_wrapper #gform_2 .gfield_checkbox li label:focus, .gform_wrapper #gform_2 .gfield_radio li label:active, .gform_wrapper #gform_2 .gfield_radio li label:focus { color: #fff; background: #008cda; border: 1px solid #008cda; }
+.gform_wrapper #gform_2 .gfield_checkbox li label:hover, .gform_wrapper #gform_2 .gfield_radio li label:hover { color: #0090e1; font-weight: bold; }
 
-.gform_wrapper #gform_4 ul.gfield_checkbox li input[type=checkbox]:checked + label, .gform_wrapper #gform_4 ul.gfield_radio li input[type=radio]:checked + label { color: #fff; background: #00A1FB; border: 1px solid #00A1FB; }
+.gform_wrapper #gform_2 ul.gfield_checkbox li input[type=checkbox]:checked + label, .gform_wrapper #gform_2 ul.gfield_radio li input[type=radio]:checked + label { color: #fff; background: #00A1FB; border: 1px solid #00A1FB; }
 
 .review__block { padding: 25px; background-color: white; border-radius: 8px; }
 .review__block--after { padding: 15px; }

@@ -32,7 +32,7 @@
 	width: 7.75em!important;
 }
 
-#gform_page_4_1, #gform_page_4_2, #gform_page_4_3 {
+#gform_page_2_1, #gform_page_2_2, #gform_page_2_3 {
 	// padding: 35px 0;
 
 	.gf_list_5col {
@@ -65,7 +65,7 @@
 	}
 }
 
-.gform_wrapper #gform_4 .gfield_checkbox li label, .gform_wrapper #gform_4 .gfield_radio li label {
+.gform_wrapper #gform_2 .gfield_checkbox li label, .gform_wrapper #gform_2 .gfield_radio li label {
 	// height: 20px;
     display: inline-block;
     font-family: Helvetica, arial, verdana, sans-serif;
@@ -93,7 +93,7 @@
 	}
 }
 
-.gform_wrapper #gform_4 ul.gfield_checkbox li input[type=checkbox]:checked+label, .gform_wrapper #gform_4 ul.gfield_radio li input[type=radio]:checked+label {
+.gform_wrapper #gform_2 ul.gfield_checkbox li input[type=checkbox]:checked+label, .gform_wrapper #gform_2 ul.gfield_radio li input[type=radio]:checked+label {
 	color:$white;
     background: $brand-blue;
     border: 1px solid $brand-blue;
