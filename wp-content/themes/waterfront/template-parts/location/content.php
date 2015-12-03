@@ -14,7 +14,7 @@
 			
 
 		</div>
-		<div class="four columns entry-content">
+		<div class="five columns entry-content">
 			<header class="entry-header">
 				<?php the_title( '<h3 class="cl-white entry-title">', '</h3>' ); ?>
 			</header><!-- .entry-header -->

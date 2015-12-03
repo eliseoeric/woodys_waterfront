@@ -10,7 +10,7 @@
 ?>
 <section id="" <?php post_class('wrapper'); ?>>
 	<div class="row wrapper full_width double food-menu__main_content hero-image" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post_id )); ?>');">
-		<div class="four columns push_one entry-content">
+		<div class="five columns push_one entry-content">
 			<header class="entry-header">
 				<?php the_title( '<h3 class="cl-white entry-title">', '</h3>' ); ?>
 			</header><!-- .entry-header -->

@@ -16,7 +16,7 @@
 		<div class="seven columns">
 			
 		</div>
-		<div class="four columns entry-content">
+		<div class="five columns entry-content">
 			<header class="entry-header">
 				<h3 class="cl-white entry-title"><?php echo get_the_title( $shop_page->ID ); ?></h3>
 			</header><!-- .entry-header -->
