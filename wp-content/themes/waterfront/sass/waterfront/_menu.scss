@@ -35,3 +35,19 @@
 		// }
 	}
 }
+
+#quick-contact li.quick-contact{
+  &__item {
+	> a {
+	  padding: 0 5px;
+	}
+
+	&--phone {
+	  padding: 0 10px;
+	}
+
+	&--cart {
+	  padding: 0 10px;
+	}
+  }
+}

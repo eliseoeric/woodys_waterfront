@@ -9,7 +9,7 @@
 */
 ?>
 <section id="" <?php post_class('wrapper'); ?>>
-	<div class="row wrapper full_width double reviews__main_content" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post_id )); ?>');">
+	<div class="row wrapper full_width double reviews__main_content hero-image" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post_id )); ?>');">
 		<div class="six columns entry-content">
 			<div class="three columns push_one">
 				<img src="/wp-content/themes/waterfront/img/wire_iphone.png" alt="Woody's Waterfront Review">

@@ -9,7 +9,7 @@
 
 <section id="" <?php post_class(); ?>>
 	<div class="row full_width wrapper double frontpage__main_content wave-border">
-		<div class="four push_seven columns entry-content">
+		<div class="five push_six columns entry-content">
 			<header class="entry-header">
 				<?php the_title( '<h3 class="cl-blue entry-title">', '</h3>' ); ?>
 			</header><!-- .entry-header -->
