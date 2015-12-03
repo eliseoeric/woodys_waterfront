@@ -16,7 +16,7 @@
  ?>
 <div class="wrapper bg-grey">
 	<div class="row">
-		<div class="eight columns centered">
+		<div class="twelve columns centered">
 			<div class="row tripadvisor_reviews">
 				<?php if( $reviews->have_posts() ) : while( $reviews->have_posts() ) : $reviews->the_post(); ?>
 					<div class="six columns pd-l-20 pd-r-20">
