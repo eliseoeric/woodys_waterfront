@@ -8,7 +8,7 @@ function acts_mb( $meta_boxes ) {
             'id'         => 'entertainers',
             'title'      => 'Entertainers',
             'object_types'      => array ( 'page' ),
-            'show_on'    => array ( 'key' => 'template', 'value' => 'template-events' ),
+            'show_on'    => array ( 'key' => 'page-template', 'value' => 'template-events.php' ),
             'context'    => 'normal',
             'priority'   => 'high',
             'show_names' => true,

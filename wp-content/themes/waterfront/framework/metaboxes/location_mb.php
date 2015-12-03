@@ -10,12 +10,8 @@ function location_mb( $meta_boxes ) {
             'object_types'      => array( 'page' ),
             'show_on'    => 
                 array( 
-                    'key' => 'template', 
-                    'value' => 'template-location', 
-                    'key' => 'template', 
-                    'value' => 'template-events',
-                    'key' => 'template',
-                    'value' => 'template-reviews'
+                    'key' => 'page-template',
+                    'value' => array('template-location.php','template-events.php','template-reviews.php')
                 ),
             'context'    => 'normal',
             'priority'   => 'high',

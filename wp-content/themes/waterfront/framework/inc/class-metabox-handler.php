@@ -3,7 +3,7 @@
 class Metabox_Handler {
 
 	public function __construct() {
-		add_filter( 'cmb2_show_on', array( $this, 'be_metabox_show_on_template' ), 10, 2 );
+//		add_filter( 'cmb2_show_on', array( $this, 'be_metabox_show_on_template' ), 10, 2 );
 		add_filter( 'cmb2_show_on', array( $this, 'be_metabox_show_on_slug' ), 10, 2 );
 	}
 
