@@ -25,18 +25,30 @@
     </div>
 	<div class="row hero_row full_width">
 
-		<div class="six columns push_three front-hero__content text-center mg-t-50">
+		<div class="front-hero__content text-center mg-t-50">
 			<img src="<?php echo $options['_waterfront_logo']; ?>" style="max-width:350px;">
 			<h2 class="mg-b-25">So close to the water your burgers going to get wet!</h2>
-			<div class="large secondary btn mg-r-15"><a href="#">View Menu</a></div>
+			<div class="large secondary btn"><a href="#">View Menu</a></div>
 			<div class="large primary btn"><a href="#">Call Now</a></div>
 		</div>
-		<div class="three columns front-hero__weather">
+		<div class="front-hero__weather">
 			<?php 
 				if( is_active_sidebar( 'frontpage-1' ) )
 				{
 					dynamic_sidebar( 'frontpage-1' );
 				}
 			?>
+		</div>
+</section>
+<section class="wrapper weather__mobile bg-dark-blue">
+	<div class="row full_width">
+		<div class="weather__mobile--widget">
+			<?php 
+				if( is_active_sidebar( 'frontpage-1' ) )
+				{
+					dynamic_sidebar( 'frontpage-1' );
+				}
+			?>
+		</div>	
 	</div>
 </section>

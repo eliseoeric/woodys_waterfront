@@ -1,17 +1,32 @@
 .front-hero__weather {
-	background-color: #0D3B66;
+	@include column(3);
+	@include hidden(all-phones);
+	background-color: $brand-dark-blue;
 	position: relative;
     z-index: 65;
-    width: 260px;
+    // width: 260px;
     height: 280px;
     padding: 35px;
-
     color: #fff;
 }
 
+.weather__mobile {
+	// @include hidden(desktop);
+
+	&--widget {
+		@include column(12);
+		background-color: $brand-dark-blue;
+	    padding: 35px;
+	    color: #fff;		
+	    height: 340px;
+	}
+}
+
 .hero-weather__current{
-
-
+	// @include respond( landscape-phones ) {
+	// 	width: 50%;
+	// 	float: left;
+	// }
 
     .currently {
 		text-transform: uppercase;
@@ -28,7 +43,6 @@
 	    text-transform: uppercase;
 	    font-weight: 100;
 	    font-size: 100px;
-
 	    .symbol {
 	    	vertical-align: super;
     		font-size: 60px;
@@ -42,6 +56,11 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border-top: 1px solid $white;
+	// @include respond( landscape-phones ) {
+	// 	width: 50%;
+	// 	top:0;
+	// 	float: left;
+	// }
 
 	.weather-stat {
 		top: 15px;
@@ -68,4 +87,11 @@
 	// #sunset {
 	// 	left: 10px;
 	// }
+}
+
+.weather-stat {
+	width: 33%;
+	padding: 0px 5px;
+	display: inline-block;
+	float:left;
 }

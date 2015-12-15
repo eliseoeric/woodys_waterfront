@@ -114,15 +114,15 @@ class Weather_Widget extends WP_Widget {
 						</div>
 					</div>
 					<div id='marineforecast' class='marineforecast row'>
-						<div class='weather-stat four columns' id='sunset'>
+						<div class='weather-stat' id='sunset'>
 							<div class='stat-label'>Sunset</div>
 							<div class='stat-value'>7:39<span class='symbol'>PM</span></div>
 						</div>
-						<div class='weather-stat four columns' id='wind-speed'>
+						<div class='weather-stat' id='wind-speed'>
 							<div class='stat-label'>Wind</div>
 							<div class='stat-value'>6-12<span class='symbol'>kn</span></div>
 						</div>
-						<div class='weather-stat four columns' id='seas'>
+						<div class='weather-stat' id='seas'>
 							<div class='stat-label'>Seas</div>
 							<div class='stat-value'>2<span class='symbol'>ft</span></div>
 						</div>
@@ -149,15 +149,15 @@ class Weather_Widget extends WP_Widget {
 						<div class='icon_weather {$condition['condition']}'>" . $condition['snippet'] . "</div></div>";
 
 		$html .= "<div id='marineforecast' class='marineforecast row'>
-						<div class='weather-stat four columns' id='sunset'>
+						<div class='weather-stat' id='sunset'>
 							<div class='stat-label'>Sunset</div>
 							<div class='stat-value'>{$sunset->format('h:i')}<span class='symbol'> PM</span></div>
 						</div>
-						<div class='weather-stat four columns' id='wind-speed'>
+						<div class='weather-stat' id='wind-speed'>
 							<div class='stat-label'>Wind</div>
 							<div class='stat-value'>{$json['wind']['speed']}<span class='symbol'> mph</span></div>
 						</div>
-						<div class='weather-stat four columns' id='condition'>
+						<div class='weather-stat' id='condition'>
 							<div class='stat-label'>Condition</div>
 							<div class='stat-value'>{$json['weather'][0]['description']}</div>
 						</div>
