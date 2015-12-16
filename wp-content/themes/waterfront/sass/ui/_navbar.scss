@@ -1,13 +1,20 @@
 /* Navigation (with dropdowns) */
+.header-wrapper {
+  width: 100%;
+  background: $white;
+  position: relative;
+  z-index: 10;
+}
 
 .navbar {
   width: 100%;
   min-height: 60px;
   display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background: $navbar-color; // Change this color in settings to change the navbar color
   position: relative;
+  z-index: 10;
   @include respond(all-phones) {
     border: none;
     .column, .columns {

@@ -9,7 +9,7 @@
 */
 ?>
 
-<section id="menu-tabs" class="wrapper wave-border">
+<section id="menu-tabs" class="wrapper wave-border bg-white">
 	<?php //get the menus ?>
 	<?php $menus = new WP_Query( array( 'post_type' => 'menu_block') ); ?>
 

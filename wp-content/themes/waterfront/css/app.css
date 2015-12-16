@@ -1241,7 +1241,9 @@ img { -ms-interpolation-mode: bicubic; }
   [class*="column"]:after { display: table; clear: both; }
   [class^="push_"], [class*="push_"], [class^="pull_"], [class*="pull_"] { margin-left: 0 !important; } }
 /* Navigation (with dropdowns) */
-.navbar { width: 100%; min-height: 60px; display: block; margin-top: 20px; margin-bottom: 20px; background: #fff; position: relative; }
+.header-wrapper { width: 100%; background: #fff; position: relative; z-index: 10; }
+
+.navbar { width: 100%; min-height: 60px; display: block; padding-top: 20px; padding-bottom: 20px; background: #fff; position: relative; z-index: 10; }
 @media only screen and (max-width: 767px) { .navbar { border: none; }
   .navbar .column, .navbar .columns { min-height: 0; } }
 .navbar.fixed { position: fixed; z-index: 99999; }
@@ -1956,6 +1958,8 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 .skip-link { display: block; margin: 0 auto; text-align: center; }
 .skip-link:focus { position: relative; }
 
+.wrapper { z-index: 10; }
+
 .wrapper + .wrapper { padding: 55px 20px 50px 20px; }
 
 .wrapper.double { padding: 60px 20px 60px 20px; }
@@ -1973,6 +1977,8 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 .row.flush-image img { position: relative; margin-bottom: -8px; }
 
 .row.full_width { max-width: 100%; }
+
+.bg-white { background-color: #fff; }
 
 .bg-dark-blue { background-color: #0F385D; }
 
@@ -2001,6 +2007,8 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 .entertainer-details { padding: 25px; }
 
 .hero-image { background-position-y: 25%; }
+
+.image-preload { position: absolute; left: -9999px; }
 
 body { border-top: 4px solid #FA5333; }
 
@@ -2077,6 +2085,7 @@ li.current_page_item { position: relative; background: #FA5333; z-index: 1000; c
 @media only screen and (max-width: 767px) { .front-hero__weather { float: left; margin-left: 0; width: 100%; } }
 @media only screen and (max-width: 767px) { .front-hero__weather { display: none !important; } }
 
+@media only screen and (min-width: 768px) { .weather__mobile { display: none !important; } }
 .weather__mobile--widget { width: 100%; background-color: #0F385D; padding: 35px; color: #fff; height: 340px; }
 @media only screen and (max-width: 767px) { .weather__mobile--widget { float: left; margin-left: 0; width: 100%; } }
 
@@ -2158,7 +2167,7 @@ figure.effect-jazz:hover h2, figure.effect-jazz:hover p { opacity: 1; -webkit-tr
 @media only screen and (min-width: 768px) { .row.hero_row { padding-left: 150px; padding-right: 150px; } }
 
 .video_container { background-image: url("/woodys_waterfront/wp-content/uploads/2015/08/woodys_bg.jpg"); background-size: cover; max-height: 700px; min-height: 600px; overflow: hidden; position: relative; }
-.video_container video { width: 100%; height: auto; display: block; position: relative; top: -100px; }
+.video_container video { width: 100%; height: auto; display: block; position: absolute; top: -100px; }
 @media only screen and (max-width: 767px) { .video_container video { display: none !important; } }
 
 .bold-shadow__blue { color: #fff; font-weight: bold; text-shadow: -3px -3px 0 #00A1FB, 3px -3px 0 #00A1FB, -3px 3px 0 #00A1FB, 3px 3px 0 #00A1FB, 4px 4px 0 #fff, 5px 5px 0 #fff, 6px 6px 0 #fff, 7px 7px 0 #fff; line-height: 0.8em; letter-spacing: 0.1em; transform: scaleY(0.7); -webkit-transform: scaleY(0.7); -moz-transform: scaleY(0.7); margin: 0; text-align: center; }
@@ -2224,6 +2233,8 @@ span.tab-title { padding: 10px 0; top: -8px; position: relative; }
 .gform_wrapper #gform_2 .gfield_checkbox li label:hover, .gform_wrapper #gform_2 .gfield_radio li label:hover { color: #0090e1; font-weight: bold; }
 
 .gform_wrapper #gform_2 ul.gfield_checkbox li input[type=checkbox]:checked + label, .gform_wrapper #gform_2 ul.gfield_radio li input[type=radio]:checked + label { color: #fff; background: #00A1FB; border: 1px solid #00A1FB; }
+
+.page-content, .entry-content, .entry-summary { margin: 1.5em 0 0; position: relative; }
 
 .review__block { padding: 25px; background-color: white; border-radius: 8px; }
 .review__block--after { padding: 15px; }

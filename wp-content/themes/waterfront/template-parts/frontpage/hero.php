@@ -13,7 +13,7 @@
 ?>
 <section id="hero" class="front-hero upslash-bg" >
 	<div class="video_container">	
-		<video autoplay loop poster="<?php echo $hero[0]; ?>" id="bgvid">
+		<video class="videobg" scr="<?php echo get_template_directory_uri() . $video_url; ?>" autoplay loop poster="<?php echo $hero[0]; ?>" style="position:absolute;">
 	       <!--  TODO -- add Webm video -->
 			<!-- TODO -- fix url path here -->
 			<?php
@@ -22,6 +22,7 @@
 			?>
 	        <source src="<?php echo get_template_directory_uri() . $video_url; ?>" type="video/mp4">
 	    </video>
+	    <canvas id="container" width="1" height="1" style="position:absolute"></canvas>
     </div>
 	<div class="row hero_row full_width">
 

@@ -22,6 +22,8 @@ class Public_Script_Handler {
 		wp_register_script( 'waterfront-plugin', get_template_directory_uri() . '/js/plugins.js', array('jquery'), $this->version, true );
 		wp_register_script( 'waterfront-main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), $this->version, true );
 		wp_register_script( 'slick_js', get_template_directory_uri() . '/js/slick.min.js', array( 'jquery', 'waterfront-main'), $this->version, true );
+
+		wp_register_script( 'water-video', get_template_directory_uri() . '/js/rain_water/index2.min.js', array( 'jquery' ), $this->version, true );
 	}
 
 	public function enqueue_styles() {
@@ -33,6 +35,8 @@ class Public_Script_Handler {
 		wp_enqueue_script( 'modernizr' );
 		wp_enqueue_script( 'waterfront-gumby' );
 		wp_enqueue_script( 'gumby-init' );
+		wp_enqueue_script( 'slick_js' );
+		wp_enqueue_script( 'water-video' );
 		wp_enqueue_script( 'waterfront-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 		wp_enqueue_script( 'waterfront-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 

@@ -11,7 +11,7 @@
 }
 
 .weather__mobile {
-	// @include hidden(desktop);
+	@include hidden(desktop);
 
 	&--widget {
 		@include column(12);

@@ -20,6 +20,8 @@
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+	position: relative;
+	z-index: 10;
 }
 
 .page-links {

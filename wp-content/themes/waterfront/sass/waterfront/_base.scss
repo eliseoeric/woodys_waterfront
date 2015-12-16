@@ -21,6 +21,10 @@
 	}
 }
 
+.wrapper {
+	z-index: 10;
+}
+
 .wrapper + .wrapper {
   padding: 55px 20px 50px 20px;
 }
@@ -57,6 +61,10 @@
 
 .row.full_width {
 	max-width: 100%;
+}
+
+.bg-white {
+	background-color: $white;
 }
 
 .bg-dark-blue{
@@ -123,4 +131,10 @@
 
 .hero-image {
   background-position-y: 25%;
+}
+
+
+.image-preload {
+	position: absolute;
+	left: -9999px;
 }

@@ -32,13 +32,18 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('demo-3'); ?>>
+	<div class="image-preload">
+		<img src="/woodys_waterfront/wp-content/themes/waterfront/img/texture/drop-color.png" alt="">
+		<img src="/woodys_waterfront/wp-content/themes/waterfront/img/texture/drop-alpha.png" alt="">
+	</div><!--.image-preload -->
 <!-- Start #page -->
 <div id="page" class="hfeed site">
 	<!-- Screen reader link -->
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'waterfront' ); ?></a>
 
 	<!-- start #masthead -->
+<div class="header-wrapper">
 	<header id="masthead" class="site-header row navbar" role="banner">
 		<div class="site-branding two columns logo">
 			<h1 class="site-title">
@@ -73,6 +78,7 @@
 			</ul>
 		</div>
 	</header>
+</div>
 	<!-- End #masthead -->
 
 	<div id="content" class="site-content">
