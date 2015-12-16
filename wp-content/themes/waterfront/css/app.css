@@ -2146,7 +2146,8 @@ figure.effect-jazz:hover figcaption::after { opacity: 1; -webkit-transform: rota
 
 figure.effect-jazz:hover h2, figure.effect-jazz:hover p { opacity: 1; -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); }
 
-.frontpage__main_content { padding: 50px; background-image: url(../img/jared_white_left.jpg); background-size: cover; background-position-y: 30%; }
+.frontpage__main_content { padding: 50px; }
+@media only screen and (min-width: 768px) { .frontpage__main_content { background-image: url(../img/jared_white_left.jpg); background-size: cover; background-position-y: 30%; } }
 .frontpage__main_content .entry-content { margin-left: 100px; }
 
 .front-hero { background-size: cover; background-position: center; position: relative; }
@@ -2238,3 +2239,5 @@ span.tab-title { padding: 10px 0; top: -8px; position: relative; }
 
 .review__block { padding: 25px; background-color: white; border-radius: 8px; }
 .review__block--after { padding: 15px; }
+
+.review__card { float: left; width: 50%; }
