@@ -8,20 +8,23 @@
 ?>
 
 <section id="" <?php post_class(); ?>>
-	<div class="row full_width wrapper double frontpage__main_content wave-border">
-		<div class="five push_six columns entry-content">
-			<header class="entry-header">
-				<?php the_title( '<h3 class="cl-blue entry-title">', '</h3>' ); ?>
-			</header><!-- .entry-header -->
-			<?php the_content(); ?>
+	<div class="banner frontpage__main_content wave-border wrapper double ">
+		<div class="row">
+			<div class="six push_six columns entry-content">
+				<img class="mobile-only" src="<?php echo get_template_directory_uri() . '/img/jared_no_mask.jpg'; ?>">
+				<header class="entry-header">
+					<?php the_title( '<h3 class="cl-blue entry-title">', '</h3>' ); ?>
+				</header><!-- .entry-header -->
+				<?php the_content(); ?>
+			</div>
+			<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'waterfront' ),
+				'after'  => '</div>',
+			) );
+			?>
 		</div>
-		<?php
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'waterfront' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
+	</div>
 
 	<!-- Start Happy Hour Banner -->
 	<?php $banner_type = get_post_meta( get_the_ID(), '_WW_banner_type', true ); ?>

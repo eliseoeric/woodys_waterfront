@@ -138,3 +138,7 @@
 	position: absolute;
 	left: -9999px;
 }
+
+.mobile-only {
+	@include hidden(desktop);
+}
