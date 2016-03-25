@@ -1,0 +1,26 @@
+.quick-contact {
+	$menu-height: 100px;
+	$stuck-menu-height: 50px;
+	display: table;
+    vertical-align: middle;
+    margin: 0;
+    float: none;
+
+	li {
+		display: table-cell;
+		text-align: center;
+		padding-bottom: 0;
+		margin: 0;
+		height: $menu-height;
+		line-height: $menu-height;
+
+		a {
+			display: block;
+			padding: 0 16px;
+			white-space: nowrap;
+			height: 60px;
+			color: $brand-orange;
+			font-size: 1rem;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.waves-section {
+	position: relative;
+	z-index:3;
+}
+
+.upslash-bg {
+	margin-bottom: -150px;
+}
+
+.hh-blue{
+	z-index: 5;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    padding: 50px 0 60px;
+    @include transition(height 1s);
+    height: auto;
+}
+
+.hh-green {
+	padding-top: 250px;
+	padding-bottom: 80px;
+	margin-bottom: -80px;
+	z-index: 1;
+}
+
+.waves-padding {
+	padding-top: 100px;
+}
+
+.frontpage-menu {
+	padding-top: 50px;
+	padding-bottom: 80px;
+	z-index: 1;
+	margin-bottom: -80px;
+}
+

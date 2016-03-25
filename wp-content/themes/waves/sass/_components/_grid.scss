@@ -1,0 +1,120 @@
+@import "../_vendor/neat/neat-helpers"; //when not in Rails
+
+// Neat Overrides
+// $column: 90px;
+// $gutter: 30px;
+// $grid-columns: 12;
+// $max-width: 1400px;
+
+// Neat Breakpoints
+$medium-screen: 600px;
+$large-screen: 900px;
+$xlarge-screen: 1200px;
+
+/*Breakpoints are defined here */
+
+$smallSized: 30em; // roughly 480px
+$midSized: 43em; // roughly 680px
+$largeSized: 60em; //roughly 960px
+$largerSized: 75em;
+
+
+$small-to-medium-only: new-breakpoint(min-width 0 max-width $large-screen 12);
+$small-only: new-breakpoint(min-width 0 max-width $medium-screen 12);
+$medium-only: new-breakpoint(min-width $medium-screen max-width $large-screen 12);
+$medium-screen-up: new-breakpoint(min-width $medium-screen 12);
+$large-screen-up: new-breakpoint(min-width $large-screen 12);
+$xlarge-screen-up: new-breakpoint(min-width $xlarge-screen 12);
+
+
+.container { @include outer-container(); }
+.fluid-container {@include outer-container(100%); position:relative;}
+.row { 
+	@include row();
+	width: 100%;
+	}
+.column,.columns { 
+
+	&:first-child {
+
+	}
+}
+
+.one.column,.one.columns,.two.columns,.three.columns,
+.four.columns,.five.columns,.six.columns,
+.seven.columns,.eight.columns,.nine.columns,
+.ten.columns,.eleven.columns,.twelve.columns,
+.one-third.columns,.one-third.column,.two-third.columns,
+.two-third.column,.one-half.column,.one-half.columns {
+	@include span-columns(12);
+}
+
+@include media($large-screen-up) {
+	.one.column,
+	.one.columns		{ @include span-columns(1) }
+	.two.columns		{ @include span-columns(2) }
+	.three.columns		{ @include span-columns(3) }
+	.four.columns		{ @include span-columns(4) }
+	.five.columns		{ @include span-columns(5) }
+	.six.columns		{ @include span-columns(6);}
+	.seven.columns		{ @include span-columns(7) }
+	.eight.columns		{ @include span-columns(8) }
+	.nine.columns		{ @include span-columns(9) }
+	.ten.columns		{ @include span-columns(10) }
+	.eleven.columns		{ @include span-columns(11) }
+	.twelve.columns		{ @include span-columns(12) }
+
+	.one-third.column,
+	.one-third.columns { @include span-columns(4) }
+
+	.two-third.column,
+	.two-third.columns { @include span-columns(8) }
+
+	.one-half.column,
+	.one-half.columns { @include span-columns(6);}
+
+
+}
+
+
+
+
+/* Offsets */
+
+.offset-by-one, .offset-by-two,.offset-by-three,
+.offset-by-four,.offset-by-five,.offset-by-six {
+	@include shift(0);
+}
+
+@include media($large-screen-up) {
+	.offset-by-one.column,
+	.offset-by-one.columns          { @include shift(1); }
+	.offset-by-two.column,
+	.offset-by-two.columns          { @include shift(2); }
+	.offset-by-three.column,
+	.offset-by-three.columns        { @include shift(3); }
+	.offset-by-four.column,
+	.offset-by-four.columns         { @include shift(4); }
+	.offset-by-five.column,
+	.offset-by-five.columns         { @include shift(5); }
+	.offset-by-six.column,
+	.offset-by-six.columns          { @include shift(6); }
+	.offset-by-seven.column,
+	.offset-by-seven.columns        { @include shift(7); }
+	.offset-by-eight.column,
+	.offset-by-eight.columns        { @include shift(8); }
+	.offset-by-nine.column,
+	.offset-by-nine.columns         { @include shift(9); }
+	.offset-by-ten.column,
+	.offset-by-ten.columns          { @include shift(10); }
+	.offset-by-eleven.column,
+	.offset-by-eleven.columns       { @include shift(11); }
+
+	.offset-by-one-third.column,
+	.offset-by-one-third.columns    { @include shift(4); }
+	.offset-by-two-thirds.column,
+	.offset-by-two-thirds.columns   { @include shift(8); }
+
+	.offset-by-one-half.column,
+	.offset-by-one-half.columns     { @include shift(6); }
+}

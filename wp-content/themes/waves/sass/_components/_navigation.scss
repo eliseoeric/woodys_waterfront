@@ -1,0 +1,70 @@
+
+
+.screen-reader-text {
+	position: absolute;
+	font-size: 0;
+	opacity: 0;
+	z-index: 0;
+}
+
+body {
+	border-top: 4px solid $brand-orange;
+}
+
+.navbar {
+	$menu-height: 100px;
+	$stuck-menu-height: 50px;
+
+	@include outer-container();
+
+	.logo a {
+		display: block;
+		padding: 20px 0;
+		overflow: hidden;
+		height: $menu-height;
+		line-height: $menu-height;
+
+		img {
+			max-height: 95%;
+		}
+	}
+
+	.menu {
+		display: table;
+	    vertical-align: middle;
+	    margin: 0;
+	    float: none;
+	}
+
+	.menu li{
+		display: table-cell;
+		text-align: center;
+		padding-bottom: 0;
+		margin: 0;
+		height: $menu-height;
+		line-height: $menu-height;
+		@include transition(all 0.2s ease-in-out);
+		a {
+			display: block;
+			padding: 0 16px;
+			white-space: nowrap;
+			height: 60px;
+			color: $brand-orange;
+			font-size: 1rem;
+		}
+
+		&:hover {
+			background-color: $brand-orange;
+			a {
+				color: $white;
+			}
+		}
+	}
+}
+
+.site-title {
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+

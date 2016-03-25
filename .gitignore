@@ -22,7 +22,8 @@ wp-content/plugins/*
 wp-content/themes/*
 !wp-content/themes/waterfront/
 !wp-content/themes/waves/
-
+node_modules/*
+wp-content/themes/waves/node_modules/*
 
 .DS_Store
 .svn

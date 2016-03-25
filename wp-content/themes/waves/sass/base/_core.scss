@@ -1,0 +1,70 @@
+.text-center { @extend %text-center; }
+.text-left { @extend %text-left; }
+.text-right { @extend %text-right; }
+// Partial to align Text Left or Right
+%text-center { text-align: center; }
+%text-left { text-align: left; }
+%text-right { text-align: right; }
+
+
+.skip-link {
+	display:block;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.screen-reader-text {
+	position: absolute;
+	font-size: 0;
+	opactiy: 0;
+	z-index: 0;
+	&:active, &:focus {
+		font-size: inherit;
+		opacity: 1;
+		z-index: 100;
+	}
+}
+
+span.block {
+	display: block;
+}
+
+.bg-white {
+	background-color: $white;
+}
+
+.bg-dark-blue{
+	background-color: $brand-dark-blue;
+}
+
+.bg-blue{
+	background-color:$brand-blue;
+}
+
+.bg-green{
+	background-color:$brand-green;
+}
+
+.bg-orange{
+	background-color: $brand-orange;
+}
+
+.bg-neutral{
+	background-color: $brand-neutral;
+}
+
+.bg-grey {
+	background-color: lighten($brand-grey,10);
+}
+
+.cl-white{
+	color: $white;
+}
+
+.cl-blue {
+	color: $brand-blue;
+}
+
+.cl-orange {
+	color: $brand-orange;
+}

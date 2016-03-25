@@ -1,0 +1,31 @@
+.page-header {
+
+	.entry-header {
+		padding: 70px 0;
+		text-align: center;
+		h1 {
+			font-weight: 700;
+		}
+	}
+
+	&__menu {
+		margin-bottom: -100px;
+
+	}
+
+	&__events {
+		margin-bottom: -100px;	
+	}
+
+	&__location {
+		margin-bottom: -100px;
+	}
+
+	&__review {
+		margin-bottom: -100px;
+		.entry-header {
+			padding: 100px 0;
+			text-align: left;
+		}
+	}
+}
