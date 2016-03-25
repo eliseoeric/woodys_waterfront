@@ -1,18 +1,18 @@
 footer.site-footer {
-	margin-top: 75px;
+	// margin-top: 75px;
 	background-color: shade( $brand-dark-blue, 20 );
 	position: relative;
 
-		&:before {
-			content: '';
-			background: url(../img/wave_border_dark.png) repeat-x top;
-			height: 100px;
-			width: 100%;
-			top:-80px;
-			left:0;
-			position: absolute;
-			display: block;
-		}
+		// &:before {
+		// 	content: '';
+		// 	background: url(../img/wave_border_dark.png) repeat-x top;
+		// 	height: 100px;
+		// 	width: 100%;
+		// 	top:-80px;
+		// 	left:0;
+		// 	position: absolute;
+		// 	display: block;
+		// }
 
 
 	.row {

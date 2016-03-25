@@ -8,7 +8,7 @@
 ?>
 
 <section id="" <?php post_class(); ?>>
-	<div class="banner frontpage__main_content wave-border wrapper double ">
+	<div class="banner frontpage__main_content wave-border wrapper extra ">
 		<div class="row">
 			<div class="six push_six columns entry-content">
 				<img class="mobile-only" src="<?php echo get_template_directory_uri() . '/img/jared_no_mask.jpg'; ?>">
