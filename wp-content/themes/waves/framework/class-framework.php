@@ -122,7 +122,8 @@ class Framework {
 				'location_mb',
 				'acts_mb',
 				'banner_mb',
-				'page_mb'
+				'page_mb',
+				'review_mb'
 			)
 		);
 	}

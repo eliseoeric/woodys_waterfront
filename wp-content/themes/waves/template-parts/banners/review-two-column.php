@@ -18,23 +18,35 @@
 		<div class="twelve columns ">
 			<div class="row tripadvisor_reviews">
 				<?php if( $reviews->have_posts() ) : while( $reviews->have_posts() ) : $reviews->the_post(); ?>
-					<div class="review__card pd-l-20 pd-r-20 bg-neutral">
-						<div class="review review__block">
+					<?php 
+						//get the review details 
+						$post_id = get_the_ID();
+
+						$review_details = array(
+							'fullName' => get_post_meta( $post_id, '_WW_review_fullName', true ),
+							'date' => get_post_meta( $post_id, '_WW_review_date', true ),
+							'rating' => get_post_meta( $post_id, '_WW_review_rating', true ),
+							'link' => get_post_meta( $post_id, '_WW_review_link', true ),
+							'source' => get_post_meta( $post_id, '_WW_review_source', true ),
+						);
+					?>
+					<div class="review__card pd-l-20 pd-r-20 ">
+						<div class="review review__block bg-neutral">
 							<header class="review__header">
-								<div class="stars"></div>
-								<h4><?php the_title(); ?></h4>
+								<div class="stars <?= $review_details['rating']; ?>"></div>
+								<h5><?php the_title(); ?></h5>
 							</header>
 							<div class="review__body">
 								<?php the_content(); ?>
 							</div>
 							<footer class="review__footer">
-								<strong><a href="#">View on TripAdvisor <i class="fa fa-long-arrow-right"></i></a></strong>
+								<strong><a href="<?= $review_details['link']; ?>">View on <?= $review_details['source']; ?> <i class="fa fa-long-arrow-right"></i></a></strong>
 							</footer>
 						</div>
 						<div class="review__block--after">
-							<h5>First Name</h5>
+							<h6><?= $review_details['fullName']; ?></h6>
 							<p class="review__block--date">
-								<i class="fa fa-clock-o"></i> 2015-10-03
+								<i class="fa fa-clock-o"></i> <?= date('j M Y', intval($review_details['date'])); ?>
 							</p>
 						</div>
 					</div>
