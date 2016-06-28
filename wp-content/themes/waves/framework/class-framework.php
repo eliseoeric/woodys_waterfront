@@ -21,7 +21,8 @@ class Framework {
 
 		$this->shortcodes = array(
 			'buttons_sh',
-			'google_street_view_sh'
+			'google_street_view_sh',
+			'image_frame_sh'
 		);
 
 		$this->widgets = array(

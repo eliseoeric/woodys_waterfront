@@ -3,8 +3,9 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 // Typography
+$style-font: 'Aquino';
 $base-font-family: 'Droid Sans', sans-serif;
-$heading-font-family: 'Raleway', sans-serif;
+$heading-font-family: $style-font, sans-serif;
 
 // Font Sizes
 $base-font-size: 1em;

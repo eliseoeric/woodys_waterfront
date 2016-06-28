@@ -8,7 +8,7 @@
 |
 */
 ?>
-<section class="waves-section hh-blue" data-bottom="0 0.9 0.33 1.0 0.66 0 1 0.1" data-top="0 0.5 0.33 1.0 0.66 0 1 0.5" data-background="image http://woodys.wpengine.com/wp-content/uploads/2015/10/menu_background_2.jpg">
+<section class="waves-section hh-blue" data-bottom="0 0.9 0.33 1.0 0.66 0 1 0.1" data-top="0 0.5 0.33 1.0 0.66 0 1 0.5" data-background="image <?= get_template_directory_uri() . '/img/envoy_point_blue.jpg'; ?>">
 
 	<div class="wrapper separator-wave">
 		<div class="container">

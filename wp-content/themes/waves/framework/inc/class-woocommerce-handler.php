@@ -66,7 +66,7 @@ class Woocommerce_Handler {
 		?>
 		<main class="shop shop__content">
 			<div class="container">
-				<div class="eight columns">
+				<div class="nine columns">
 		<?php
 		echo ob_get_clean();
 	}
@@ -82,7 +82,7 @@ class Woocommerce_Handler {
 	public function waterfront_before_woocommerce_sidebar() {
 		ob_start();
 		?>		
-		<div class="four columns">
+		<div class="three columns">
 		<?php
 		echo ob_get_clean();
 	}

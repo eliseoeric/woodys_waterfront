@@ -65,6 +65,10 @@ span.block {
 	color: $brand-blue;
 }
 
+.cl-dark-blue {
+	color: shade($brand-blue, 25%);
+}
+
 .cl-orange {
 	color: $brand-orange;
 }
