@@ -6,6 +6,7 @@
 }
 #sbi_admin h3{
 	padding: 15px 0 0 0;
+	clear: both;
 }
 #sbi_admin .sbi_tooltip{
 	width: 80%;
@@ -99,7 +100,7 @@
 }
 
 #sbi_admin .sbi_radio_label{
-	width: 70px;
+	width: 80px;
 	padding-top: 5px;
 
 	display: -moz-inline-stack;
@@ -133,58 +134,36 @@
   	border-radius: 2px;
 }
 
-/* License */
-#sbi_admin .sbi_license_status{
-	display: -moz-inline-stack;
-	display: inline-block;
-	vertical-align: top;
-	zoom: 1;
-	*display: inline;
-	
-	padding: 5px;
+/* Locations */
+#sbi_admin #sb_instagram_coordinates_options{
+	display: none;
+	padding: 10px 0;
 }
-
-/* Add Facebook dashicon to CFF admin menu */
-#toplevel_page_sb-instagram-feed .toplevel_page_sb-instagram-feed .wp-menu-image:before{
-	content: "\f306";
+#sbi_admin #sb_instagram_coordinates_options{
+	font-size: 12px;
+	line-height: 28px;
 }
-
-/* Pro only notices */
 #sbi_admin .sbi_row{
-	display: block;
-	width: 100%;
-}
-#sbi_admin .sbi_pro,
-#sbi_admin .sbi_pro label{
-	color: #999 !important;
-}
-#sbi_admin .sbi_shortcode_table tr.sbi_pro{
-	background: #eacccc;
-}
-#sbi_admin .sbi_table_key{
-	display: block;
-	float: left;
-	width: 11px;
-	height: 11px;
-	border: 1px solid #999;
-	background: #eacccc;
-	margin: 3px 6px 0 0;
-}
-#sbi_admin .sbi_plugins_promo,
-#sbi_admin .sbi_share_plugin{
 	width: 100%;
 	float: left;
 	clear: both;
 }
-#sbi_admin .sbi_plugins_promo a{
-	color: #e34f0e;
+#sbi_admin .sbi_col{
+	float: left;
 }
-#sbi_admin .sbi_share_plugin{
-	border-top: 1px solid #ccc;
-	margin: 20px 0 0 0;
+#sbi_admin .sbi_col.sbi_one{
+	width: 110px;
+}
+#sbi_admin #sb_instagram_coordinates_options .sbi_col.sbi_one{
+	width: 70px;
+}
+#sbi_admin .sbi_col.sbi_two{
+	width: 600px;
+}
+#sbi_admin .sbi_row input[type=radio]{
+	margin: 5px 2px 0 0;
 }
 
-/* Quick links */
 #sbi_admin .sb_instagram_contents_links{
 	float: left;
 	clear: both;
@@ -213,33 +192,21 @@
 	top: -2px;
 }
 
-/* Shortcode labels */
-#sbi_admin label{
-	position: relative;
-}
-#sbi_admin th{
-	position: relative;
-}
-#sbi_admin .sbi_shortcode{
-	display: none;
-	position: absolute;
-	z-index: 10;
-	font-size: 11px;
-	float: left;
-	width: auto;
-	white-space: pre-line;
-	line-height: 1.4;
-}
-#sbi_admin .sbi_shortcode_symbol{
-	position: absolute;
-	right: -24px;
-	bottom: 0px;
-  padding: 2px 4px 3px 3px;
-	width: auto;
-	font-size: 11px;
-	margin-left: 5px;
+/* License */
+#sbi_admin .sbi_license_status{
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	*display: inline;
+	
+	padding: 5px;
 }
 
+/* Add Facebook dashicon to CFF admin menu */
+#toplevel_page_sb-instagram-feed .toplevel_page_sb-instagram-feed .wp-menu-image:before{
+	content: "\f306";
+}
 
 /* Error notice */
 #sbi_admin .sbi_notice{
@@ -278,6 +245,115 @@
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
+#sbi_admin #sb_instagram_header_style_boxed_options{
+	display: block;
+	float: left;
+	clear: both;
+	overflow: hidden;
+	width: auto;
+	padding: 10px;
+	background: rgba(255,255,255,0.5);
+	font-size: 12px;
+	line-height: 22px;
+}
+#sbi_admin #sb_instagram_header_style_boxed_options p{
+	float: left;
+	clear: both;
+	font-size: 12px;
+	line-height: 22px;
+	padding: 0 0 10px 0;
+}
+
+
+
+.sbi-license-expired{
+	/*float: left;*/
+	clear: both;
+	width: 96%;
+	margin: 10px 0 20px 0;
+	background: #F7E6E6;
+	padding: 15px 1.5%;
+	border: 1px solid #BA7B7B;
+	color: #592626;
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.sbi-license-expired p{
+	/*float: left;*/
+	padding: 0;
+	margin: 0 5px 0 0;
+}
+#sbi-why-renew-show,
+#sbi-why-renew-hide{
+	/*float: left;*/
+}
+#sbi-why-renew{
+	/*float: left;*/
+	clear: both;
+	width: 100%;
+}
+#sbi-why-renew h4{
+	/*float: left;*/
+	clear: both;
+	margin: 15px 0 0 0;
+}
+#sbi-why-renew p{
+	margin: 0;
+	clear: both;
+}
+
+.sbi-license-countdown{
+	background: #fff4c6;
+	border: 1px solid #905207;
+	color: #905207;
+}
+#sbi_admin label{
+	position: relative;
+}
+#sbi_admin th{
+	position: relative;
+}
+#sbi_admin .sbi_shortcode{
+	display: none;
+	position: absolute;
+	z-index: 10;
+	font-size: 11px;
+	float: left;
+	width: auto;
+	white-space: pre-line;
+	line-height: 1.4;
+}
+#sbi_admin .sbi_shortcode_symbol{
+	position: absolute;
+	right: -24px;
+	bottom: 0px;
+  padding: 2px 4px 3px 3px;
+	width: auto;
+	font-size: 11px;
+	margin-left: 5px;
+}
+
+/* Quick start */
+#sbi_admin .sbi_quickstart{
+    display: inline-block;
+    margin: 15px 0 0 0;
+    padding: 15px 20px;
+
+    border: 1px solid #ccc;
+    background: #eee;
+    background: rgba(255,255,255,0.5);
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+#sbi_admin .sbi_quickstart h3,
+#sbi_admin .sbi_quickstart p{
+    margin: 0;
+    padding: 5px 0;
+}
 
 /* Update notice */
 .sb_instagram_notice{
@@ -309,65 +385,4 @@
 	right: 10px;
 	color: #dd3d36;
 	text-decoration: none;
-}
-
-/* Review notice */
-.sbi_review_notice{
-    position: relative;
-    overflow: hidden;
-    max-width: 870px;
-    margin-top: 10px;
-    padding: 10px 10px 7px 10px;
-
-    background: #E6F0E8;
-    border: 1px solid #6AB074;
-    color: #214F28;
-}
-.sbi_review_notice img{
-    width: 84px;
-    margin: 0 0 0 -100% !important;
-
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-}
-.sbi_review_notice .ctf-notice-text{
-    float: left;
-    clear: none;
-    width: 100%;
-    padding: 4px 0;
-}
-.sbi_review_notice p{
-    float: left;
-    clear: both;
-    width: auto;
-    margin: 0 0 0 100px !important;
-    padding: 4px 40px 4px 0;
-}
-.sbi_review_notice a{
-    display: inline-block;
-    padding: 0 8px;
-    color: #178529;
-}
-.sbi_review_notice a:hover,
-.sbi_review_notice a:focus{
-    color: #0c7abf;
-}
-.sbi_review_notice .links{
-    margin: 0 0 0 92px !important;
-    padding: 4px 0 0 0;
-}
-.sbi_review_notice .links a:first-child{
-    /*padding-left: 0;*/
-}
-.sbi_review_notice .sbi_notice_close{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    line-height: 1;
-}
-.sbi_review_notice .sbi_notice_close:hover,
-.sbi_review_notice .sbi_notice_close:focus{
-    color: #a34100;
 }
