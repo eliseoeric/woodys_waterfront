@@ -41,6 +41,11 @@
 	
 		<div class="container">
 			<div class="row">
+				<div class="twelve column pd-b-15 pd-t-15">
+					<h2 >Casual Waterfront Dining </h2>
+				</div>
+			</div>
+			<div class="row">
 				<div class="three columns pd-l-10 pd-r-10 jazz-img">
 				<?php waterfront_image_overlay( get_template_directory_uri() . '/img/burgers.jpg', "So close to the water your burger gets wet", "Woody's Waterfront Entrance" );  ?>
 					
