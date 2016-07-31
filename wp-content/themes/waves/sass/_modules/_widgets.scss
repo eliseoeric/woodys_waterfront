@@ -1,0 +1,14 @@
+.footer-widget .gform_wrapper{
+	label.gfield_label {
+		color: shade( $white, 10 );
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		background-color: shade( $white, 10 );
+	}
+
+	.gform_footer input[type="submit"] {
+		width: 100%;
+	}
+}
