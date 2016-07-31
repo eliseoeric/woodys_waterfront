@@ -55,6 +55,7 @@
 			</div>
 		</div>
 		<div class="twelve columns text-center">
+			<p>Had a great time at Woody's? Tell us about your experience!</p>
 			<a href="#" class="button">Leave a Review</a>
 		</div>
 	</div>	
