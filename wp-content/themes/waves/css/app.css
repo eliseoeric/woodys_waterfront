@@ -2166,7 +2166,7 @@ ul.social_icons li {
   display: table;
   vertical-align: middle;
   margin: 0;
-  float: none;
+  float: right;
 }
 /* line 9, ../sass/_modules/_quick-contact.scss */
 .quick-contact li {
@@ -2180,11 +2180,23 @@ ul.social_icons li {
 /* line 17, ../sass/_modules/_quick-contact.scss */
 .quick-contact li a {
   display: block;
-  padding: 0 16px;
+  padding: 0 5px;
   white-space: nowrap;
   height: 60px;
   color: #FA5333;
   font-size: 1rem;
+}
+/* line 27, ../sass/_modules/_quick-contact.scss */
+.quick-contact__item--cart {
+  padding: 0 10px;
+}
+/* line 31, ../sass/_modules/_quick-contact.scss */
+.quick-contact__item--phone {
+  padding: 0 10px;
+}
+/* line 36, ../sass/_modules/_quick-contact.scss */
+.quick-contact__item .fa {
+  font-size: 1.2em;
 }
 
 /* line 1, ../sass/_modules/_waves.scss */

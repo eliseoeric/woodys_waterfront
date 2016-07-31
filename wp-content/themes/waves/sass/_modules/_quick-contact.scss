@@ -4,7 +4,7 @@
 	display: table;
     vertical-align: middle;
     margin: 0;
-    float: none;
+    float: right;
 
 	li {
 		display: table-cell;
@@ -16,11 +16,25 @@
 
 		a {
 			display: block;
-			padding: 0 16px;
+			padding: 0 5px;
 			white-space: nowrap;
 			height: 60px;
 			color: $brand-orange;
 			font-size: 1rem;
+		}
+	}
+
+	&__item--cart {
+		padding: 0 10px;
+	}
+
+	&__item--phone {
+		padding: 0 10px;
+	}
+
+	&__item {
+		.fa {
+			font-size: 1.2em;
 		}
 	}
 }
