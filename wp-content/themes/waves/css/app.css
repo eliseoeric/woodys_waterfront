@@ -2098,6 +2098,19 @@ ul.social_icons li {
 /* line 19, ../sass/_components/_review-cards.scss */
 .review__card h5, .review__card h6 {
   font-weight: 700;
+  margin-bottom: 0;
+}
+/* line 24, ../sass/_components/_review-cards.scss */
+.review__card--stars {
+  color: #FA5333;
+  list-style: none;
+  padding: 5px 0;
+  margin-bottom: 1rem;
+}
+/* line 29, ../sass/_components/_review-cards.scss */
+.review__card--stars li {
+  padding: 0 5px;
+  display: inline-block;
 }
 
 /* line 2, ../sass/_modules/_wrapper.scss */
