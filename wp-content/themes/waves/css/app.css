@@ -5,6 +5,7 @@
  *    without disabling user zoom.
  */
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
 /* line 9, ../sass/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -690,7 +691,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Aquino", sans-serif;
+  font-family: "Montserrat", sans-serif, sans-serif;
   letter-spacing: 15px;
   font-size: 1.2em;
   line-height: 1.2;
@@ -909,11 +910,11 @@ h6, .h6 {
 }
 /* Fonts */
 @font-face {
-  font-family: "Aquino";
+  font-family: "Montserrat, sans-serif";
   font-style: normal;
   font-weight: 300;
-  src: url(../fonts/Aquino.eot);
-  src: url("../fonts/Aquino.eot?#iefix") format("ie9-skip-eot"), url("../fonts/Aquino.woff") format("woff"), url("../fonts/Aquino.ttf") format("truetype");
+  src: url(../fonts/Montserrat, sans-serif.eot);
+  src: url("../fonts/Montserrat, sans-serif.eot?#iefix") format("ie9-skip-eot"), url("../fonts/Montserrat, sans-serif.woff") format("woff"), url("../fonts/Montserrat, sans-serif.ttf") format("truetype");
 }
 /* line 4, ../sass/_margin-padding.scss */
 .mg-b-0 {
