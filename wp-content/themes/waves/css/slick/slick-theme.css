@@ -1,15 +1,8 @@
 @charset "UTF-8";
 /* Slider */
 /* Icons */
-@font-face {
-  font-family: "slick";
-  src: url('/fonts/slick.eot?1437649106');
-  src: url('/fonts/slick.eot?&1437649106#iefix') format("embedded-opentype"), url('/fonts/slick.woff?1437649106') format("woff"), url('/fonts/slick.ttf?1437649106') format("truetype"), url('/fonts/slick.svg?1437649106#slick') format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 /* Arrows */
-/* line 58, ../../sass/slick/slick-theme.scss */
+/* line 59, ../../sass/slick/slick-theme.scss */
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -20,87 +13,91 @@
   font-size: 0px;
   cursor: pointer;
   background: transparent;
-  color: transparent;
+  color: #282828;
   top: 50%;
   margin-top: -10px;
   padding: 0;
   border: none;
   outline: none;
 }
-/* line 74, ../../sass/slick/slick-theme.scss */
+/* line 75, ../../sass/slick/slick-theme.scss */
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
   outline: none;
   background: transparent;
-  color: transparent;
+  color: #282828;
 }
-/* line 78, ../../sass/slick/slick-theme.scss */
+/* line 79, ../../sass/slick/slick-theme.scss */
 .slick-prev:hover:before, .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before {
   opacity: 1;
 }
-/* line 82, ../../sass/slick/slick-theme.scss */
+/* line 83, ../../sass/slick/slick-theme.scss */
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
   opacity: 0.25;
 }
 
-/* line 87, ../../sass/slick/slick-theme.scss */
+/* line 88, ../../sass/slick/slick-theme.scss */
 .slick-prev:before, .slick-next:before {
-  font-family: "slick";
+  font-family: "FontAwesome";
   font-size: 20px;
   line-height: 1;
-  color: white;
+  color: #282828;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 97, ../../sass/slick/slick-theme.scss */
+/* line 98, ../../sass/slick/slick-theme.scss */
 .slick-prev {
+  box-shadow: none;
+  border-radius: none;
   left: -25px;
 }
-/* line 99, ../../sass/slick/slick-theme.scss */
+/* line 102, ../../sass/slick/slick-theme.scss */
 [dir="rtl"] .slick-prev {
   left: auto;
   right: -25px;
 }
-/* line 103, ../../sass/slick/slick-theme.scss */
+/* line 106, ../../sass/slick/slick-theme.scss */
 .slick-prev:before {
-  content: "←";
+  content: "";
 }
-/* line 105, ../../sass/slick/slick-theme.scss */
+/* line 108, ../../sass/slick/slick-theme.scss */
 [dir="rtl"] .slick-prev:before {
-  content: "→";
+  content: "";
 }
 
-/* line 111, ../../sass/slick/slick-theme.scss */
+/* line 114, ../../sass/slick/slick-theme.scss */
 .slick-next {
+  box-shadow: none;
+  border-radius: none;
   right: -25px;
 }
-/* line 113, ../../sass/slick/slick-theme.scss */
+/* line 118, ../../sass/slick/slick-theme.scss */
 [dir="rtl"] .slick-next {
   left: -25px;
   right: auto;
 }
-/* line 117, ../../sass/slick/slick-theme.scss */
+/* line 122, ../../sass/slick/slick-theme.scss */
 .slick-next:before {
-  content: "→";
+  content: "";
 }
-/* line 119, ../../sass/slick/slick-theme.scss */
+/* line 124, ../../sass/slick/slick-theme.scss */
 [dir="rtl"] .slick-next:before {
-  content: "←";
+  content: "";
 }
 
 /* Dots */
-/* line 127, ../../sass/slick/slick-theme.scss */
+/* line 132, ../../sass/slick/slick-theme.scss */
 .slick-slider {
   margin-bottom: 30px;
 }
 
-/* line 131, ../../sass/slick/slick-theme.scss */
+/* line 136, ../../sass/slick/slick-theme.scss */
 .slick-dots {
   position: absolute;
   bottom: -45px;
@@ -110,7 +107,7 @@
   padding: 0;
   width: 100%;
 }
-/* line 139, ../../sass/slick/slick-theme.scss */
+/* line 144, ../../sass/slick/slick-theme.scss */
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -120,7 +117,7 @@
   padding: 0;
   cursor: pointer;
 }
-/* line 147, ../../sass/slick/slick-theme.scss */
+/* line 152, ../../sass/slick/slick-theme.scss */
 .slick-dots li button {
   border: 0;
   background: transparent;
@@ -134,34 +131,34 @@
   padding: 5px;
   cursor: pointer;
 }
-/* line 159, ../../sass/slick/slick-theme.scss */
+/* line 164, ../../sass/slick/slick-theme.scss */
 .slick-dots li button:hover, .slick-dots li button:focus {
   outline: none;
 }
-/* line 161, ../../sass/slick/slick-theme.scss */
+/* line 166, ../../sass/slick/slick-theme.scss */
 .slick-dots li button:hover:before, .slick-dots li button:focus:before {
   opacity: 1;
 }
-/* line 165, ../../sass/slick/slick-theme.scss */
+/* line 170, ../../sass/slick/slick-theme.scss */
 .slick-dots li button:before {
   position: absolute;
   top: 0;
   left: 0;
-  content: "•";
+  content: "";
   width: 20px;
   height: 20px;
-  font-family: "slick";
+  font-family: "FontAwesome";
   font-size: 6px;
   line-height: 20px;
   text-align: center;
-  color: black;
+  color: #282828;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 182, ../../sass/slick/slick-theme.scss */
+/* line 187, ../../sass/slick/slick-theme.scss */
 .slick-dots li.slick-active button:before {
-  color: black;
+  color: #282828;
   opacity: 0.75;
 }
 

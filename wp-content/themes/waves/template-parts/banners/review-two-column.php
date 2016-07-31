@@ -33,8 +33,8 @@
 					<div class="review__card pd-l-20 pd-r-20 ">
 						<div class="review review__block bg-neutral">
 							<header class="review__header">
-								<div class="stars <?= $review_details['rating']; ?>"></div>
 								<h5><?php the_title(); ?></h5>
+								<?php echo show_review_rating( $review_details['rating'] ); ?>
 							</header>
 							<div class="review__body">
 								<?php the_content(); ?>

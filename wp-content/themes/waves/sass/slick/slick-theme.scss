@@ -2,15 +2,16 @@
 
 // Default Variables
 
-$slick-font-path: "/fonts/" !default;
-$slick-font-family: "slick" !default;
+$slick-font-path: "../fonts/" !default;
+$slick-font-family: "FontAwesome" !default;
 $slick-loader-path: "././" !default;
-$slick-arrow-color: white !default;
-$slick-dot-color: black !default;
+$dark-gray: #282828;
+$slick-arrow-color: $dark-gray !default;
+$slick-dot-color: $dark-gray !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "←" !default;
-$slick-next-character: "→" !default;
-$slick-dot-character: "•" !default;
+$slick-prev-character: "\f0a8" !default;
+$slick-next-character: "\f0a9" !default;
+$slick-dot-character: "\f192" !default;
 $slick-dot-size: 6px !default;
 $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
@@ -65,7 +66,7 @@ $slick-opacity-not-active: 0.25 !default;
     font-size: 0px;
     cursor: pointer;
     background: transparent;
-    color: transparent;
+    color: $dark-gray;
     top: 50%;
     margin-top: -10px;
     padding: 0;
@@ -74,7 +75,7 @@ $slick-opacity-not-active: 0.25 !default;
     &:hover, &:focus {
         outline: none;
         background: transparent;
-        color: transparent;
+        color: $dark-gray;
         &:before {
             opacity: $slick-opacity-on-hover;
         }
@@ -95,6 +96,8 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
+    box-shadow: none;
+    border-radius: none;
     left: -25px;
     [dir="rtl"] & {
         left: auto;
@@ -109,6 +112,8 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
+    box-shadow: none;
+    border-radius: none;
     right: -25px;
     [dir="rtl"] & {
         left: -25px;

@@ -18,5 +18,17 @@
 
 	h5,h6 {
 		font-weight: 700;
+		margin-bottom: 0;
+	}
+
+	&--stars {
+		color: $brand-orange;
+		list-style: none;
+		padding: 5px 0;
+		margin-bottom: 1rem;
+		li {
+			padding: 0 5px;
+			display: inline-block;
+		}
 	}
 }
