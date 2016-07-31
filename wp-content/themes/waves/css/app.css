@@ -2189,8 +2189,17 @@ ul.social_icons li {
 .frontpage-menu {
   padding-top: 170px;
   padding-bottom: 80px;
-  z-index: 1;
+  margin-bottom: 150px;
+}
+
+/* line 38, ../sass/_modules/_waves.scss */
+.instagram-feed {
+  z-index: 4;
+  margin-bottom: -150px;
+  margin-top: -150px;
+  padding-bottom: 80px;
   margin-bottom: -80px;
+  min-height: 800px;
 }
 
 /* line 1, ../sass/_modules/_tabs.scss */
