@@ -17,6 +17,8 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/frontpage/content', 'frontpage' ); ?>
 
 		<?php endwhile; // End of the loop. ?>
+		
+		<?php get_template_part( 'template-parts/partials/instagram-feed' ); ?>
 	</main>
 </div>
 

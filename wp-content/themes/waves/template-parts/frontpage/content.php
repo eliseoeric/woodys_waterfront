@@ -35,7 +35,7 @@
 	<?php $banner_type = get_post_meta( get_the_ID(), '_WW_banner_type', true ); ?>
 	<?php get_template_part( 'template-parts/banners/' . $banner_type ); ?>
 	<!-- End Happy Hour banner -->
-<section class="waves-section frontpage-menu" data-bottom="0 0 0.33 0.8 0.66 0.8 1 0" data-background="solid #fbf7ec">
+<section class="waves-section frontpage-menu"  data-background="solid #fbf7ec">
 	<!-- Start Image Showcase -->
 	<div class="wrapper">
 	

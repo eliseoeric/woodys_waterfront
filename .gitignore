@@ -17,6 +17,7 @@ wp-content/plugins/*
 !wp-content/plugins/gravityforms/
 !wp-content/plugins/woocommerce/
 !wp-content/plugins/wordpress-seo/
+!wp-content/plugins/instagram-feed-pro/
  
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*
