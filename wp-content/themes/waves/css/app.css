@@ -2441,17 +2441,18 @@ ul.social_icons li {
 /* line 8, ../sass/_layouts/_menu.scss */
 .waves-section.menu-tabs {
   margin-bottom: -150px;
+  min-height: 800px;
   margin-top: -150px;
 }
 
-/* line 13, ../sass/_layouts/_menu.scss */
+/* line 14, ../sass/_layouts/_menu.scss */
 .waves-section.tripadvisor {
   padding-top: 200px;
   padding-bottom: 80px;
   margin-bottom: -80px;
   z-index: 1;
 }
-/* line 19, ../sass/_layouts/_menu.scss */
+/* line 20, ../sass/_layouts/_menu.scss */
 .waves-section.tripadvisor .container {
   padding-top: 100px;
 }
