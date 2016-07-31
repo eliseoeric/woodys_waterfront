@@ -21,7 +21,8 @@
 				<img src="<?php echo $options['_waterfront_logo']; ?>" style="max-width:350px;">
 				<h2 class="mg-b-25">So close to the water your burgers going to get wet!</h2>
 				<div class="large secondary button"><a href="#">View Menu</a></div>
-				<div class="large primary button"><a href="#">Call Now</a></div>
+				<div class="large primary button mobile-only"><a href="#">Call Now</a></div>
+				<div class="large primary button desktop-only"><a href="#">Gift Cards</a></div>
 			</div>
 			<div class="front-hero__weather">
 				<?php 

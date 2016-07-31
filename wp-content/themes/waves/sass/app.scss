@@ -5,11 +5,12 @@
 
 @import "vars";
 
+
+@import "_components/grid";
+
 @import "base/base";
 @import "fonts";
 @import "margin-padding";
-
-@import "_components/grid";
 @import "_components/navigation";
 @import "_components/jazz_image";
 @import "_components/banner";

@@ -7,3 +7,16 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+.mobile-only {
+	@include media( $medium-screen-up ) {
+		display: none;
+	}
+}
+
+.desktop-only {
+	display: none;
+	@include media( $medium-screen-up ) {
+		display: inline-block;
+	}
+}
