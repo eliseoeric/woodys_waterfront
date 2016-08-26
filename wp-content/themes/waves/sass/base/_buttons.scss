@@ -38,6 +38,11 @@
     font-size: modular-scale(2);
   }
 
+  &.full-width {
+    width: 100%;
+    text-align:center;
+  }
+
   &:hover,
   &:focus {
     background-color: shade($action-color, 20%);
