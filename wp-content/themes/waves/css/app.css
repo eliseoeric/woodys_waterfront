@@ -830,16 +830,21 @@ button.large, input[type="button"].large, input[type="reset"].large, input[type=
   font-size: 1.44em;
 }
 /* line 41, ../sass/base/_buttons.scss */
+button.full-width, input[type="button"].full-width, input[type="reset"].full-width, input[type="submit"].full-width, .button.full-width {
+  width: 100%;
+  text-align: center;
+}
+/* line 46, ../sass/base/_buttons.scss */
 button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus, .button:hover, .button:focus {
   background-color: #0081c9;
   color: #fff;
 }
-/* line 47, ../sass/base/_buttons.scss */
+/* line 52, ../sass/base/_buttons.scss */
 button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled, .button:disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
-/* line 51, ../sass/base/_buttons.scss */
+/* line 56, ../sass/base/_buttons.scss */
 button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover, .button:disabled:hover {
   background-color: #00A1FB;
 }
@@ -1008,6 +1013,12 @@ picture {
   max-width: 100%;
 }
 
+/* line 11, ../sass/base/_media.scss */
+img.align-center {
+  margin: auto;
+  display: block;
+}
+
 /* line 1, ../sass/base/_tables.scss */
 table {
   border-collapse: collapse;
@@ -1146,36 +1157,41 @@ span.block {
 }
 
 /* line 48, ../sass/base/_core.scss */
+.bg-teal {
+  background-color: #1BBC9B;
+}
+
+/* line 52, ../sass/base/_core.scss */
 .bg-orange {
   background-color: #FA5333;
 }
 
-/* line 52, ../sass/base/_core.scss */
+/* line 56, ../sass/base/_core.scss */
 .bg-neutral {
   background-color: #fbf7ec;
 }
 
-/* line 56, ../sass/base/_core.scss */
+/* line 60, ../sass/base/_core.scss */
 .bg-grey {
   background-color: #dce3e7;
 }
 
-/* line 60, ../sass/base/_core.scss */
+/* line 64, ../sass/base/_core.scss */
 .cl-white {
   color: #fff;
 }
 
-/* line 64, ../sass/base/_core.scss */
+/* line 68, ../sass/base/_core.scss */
 .cl-blue {
   color: #00A1FB;
 }
 
-/* line 68, ../sass/base/_core.scss */
+/* line 72, ../sass/base/_core.scss */
 .cl-dark-blue {
   color: #0079bc;
 }
 
-/* line 72, ../sass/base/_core.scss */
+/* line 76, ../sass/base/_core.scss */
 .cl-orange {
   color: #FA5333;
 }

@@ -18,7 +18,7 @@ class Weather_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'weather_widget', //Base ID
-			__( 'Weather Widget', 'waterfront' ), //Name
+			__( 'Weather Widget', 'waves' ), //Name
 			array( 'description' => 'Uses OpenWeather API to retrive weather conditions' ) //Args
 		);
 		$options = get_option('framework_options');
