@@ -1,81 +1,80 @@
-/**
- * File navigation.js.
- *
- * Handles toggling the navigation menu for small screens and enables TAB key
- * navigation support for dropdown menus.
- */
-( function() {
-	var container, button, menu, links, subMenus, i, len;
+window.nav = (function( window, document, $ ) {
 
-	container = document.getElementById( 'site-navigation' );
-	if ( ! container ) {
-		return;
-	}
+	var nav = {};
 
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button ) {
-		return;
-	}
-
-	menu = container.getElementsByTagName( 'ul' )[0];
-
-	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
-		return;
-	}
-
-	menu.setAttribute( 'aria-expanded', 'false' );
-	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
-		menu.className += ' nav-menu';
-	}
-
-	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			container.className = container.className.replace( ' toggled', '' );
-			button.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
-		} else {
-			container.className += ' toggled';
-			button.setAttribute( 'aria-expanded', 'true' );
-			menu.setAttribute( 'aria-expanded', 'true' );
-		}
+	nav.cache = function() {
+		nav.$wrapper = $('.site-navigation');
+		nav.$menu = $('#primary-menu');
+		nav.$trigger = $('.header-menu-trigger');
 	};
 
-	// Get all the link elements within the menu.
-	links    = menu.getElementsByTagName( 'a' );
-	subMenus = menu.getElementsByTagName( 'ul' );
+	nav.init = function() {
+		nav.cache();
 
-	// Set menu items with submenus to aria-haspopup="true".
-	for ( i = 0, len = subMenus.length; i < len; i++ ) {
-		subMenus[i].parentNode.setAttribute( 'aria-haspopup', 'true' );
-	}
+		nav.assignListeners();
+		nav.controller();
+	};
 
-	// Each time a menu link is focused or blurred, toggle focus.
-	for ( i = 0, len = links.length; i < len; i++ ) {
-		links[i].addEventListener( 'focus', toggleFocus, true );
-		links[i].addEventListener( 'blur', toggleFocus, true );
-	}
+	nav.controller = function() {
 
-	/**
-	 * Sets or removes .focus class on an element.
-	 */
-	function toggleFocus() {
-		var self = this;
+		nav.$trigger.on( 'click', function( e ) {
+			e.preventDefault();
+			console.log('click fired');
+			if( ! nav.$wrapper.hasClass( 'site-navigation--visible' ) ) {
+				console.log('step 1');
+				nav.$wrapper.addClass( 'site-navigation--visible' );
+			} else {
+				console.log('step 2');
+				nav.$wrapper.removeClass( 'site-navigation--visible' );
+			}
+		});
+	};
 
-		// Move up through the ancestors of the current link until we hit .nav-menu.
-		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
-
-			// On li elements toggle the class .focus.
-			if ( 'li' === self.tagName.toLowerCase() ) {
-				if ( -1 !== self.className.indexOf( 'focus' ) ) {
-					self.className = self.className.replace( ' focus', '' );
-				} else {
-					self.className += ' focus';
-				}
+	nav.assignListeners = function() {
+		nav.$menu.find( '.submenu > a' ).on( 'click', function( e ) {
+			if( !nav.isMenuOpen() ) {
+				return;
 			}
 
-			self = self.parentElement;
-		}
+			e.preventDefault();
+
+			var $this = $(this);
+
+			if( nav.checkSelected( nav.$menu ) ) {
+				//check if this is selected
+
+				if( $this.hasClass( 'selected' ) && $this.next('.dropdown').hasClass('dropdown--open')) {
+					$this.next('.dropdown').removeClass('dropdown--open');
+				} else if ( $this.hasClass('selected') && !$this.next('.dropdown').hasClass('dropdown--open')) {
+					$this.next('.dropdown').addClass('dropdown--open');
+				} else {
+					nav.$activeItem.removeClass('selected');
+					nav.$activeItem.next('.dropdown').removeClass('dropdown--open');
+					$this.addClass('selected');
+					$this.next('.dropdown').addClass('dropdown--open');
+					nav.$activeItem = $this;
+				}
+			} else {
+				$this.next('dropdown').addClass('dropdown--open');
+				$this.adClass('selected');
+				nav.$activeItem = $this;
+			}
+		});
+	};
+
+	nav.isMenuOpen = function() {
+		if( nav.$wrapper.hasClass( '.site-navigation--visible' ) && window.innerWidth < 960 ) {
+			return true;
+		} else {
+			return false;
+		} 
+	};
+
+	nav.checkSelected = function( menu ) {
+		return menu.find( '.submenu > a.selected').length != 0;
 	}
-} )();
+
+	$(document).ready( nav.init );
+
+	return nav;
+})( window, document, jQuery )

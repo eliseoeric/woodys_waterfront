@@ -1,11 +1,12 @@
 <?php
 
 //Adding a dump and die for debugging
-function dd( $var ) {
-	echo '<pre>';
-	var_dump( $var );
-	echo '</pre>';
-	die();
+if( ! function_exists( 'dd' ) ) {
+	function dd( $var ) {
+		echo "<pre>";
+		var_dump( $var );
+		echo "</pre>";
+	}
 }
 
 function show_review_rating( $review ) {

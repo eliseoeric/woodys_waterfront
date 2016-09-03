@@ -17,12 +17,62 @@ body {
 
 	@include outer-container();
 
+	.site-navigation {
+		top:79px;
+		position: absolute;
+		z-index: 1000;
+		transition:opacity 0.2s 0s, visibility 0s 0s;
+		box-shadow: 0 2px 10px rgba( 0, 0, 0, .2 );
+		opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+
+		@include media( $large-screen-up ) {
+			box-shadow: none;
+			opacity: 1;
+			visibility: visible;
+			overflow: visible;
+			position: relative;
+			top:0;
+		}
+
+		&--visible {
+			opacity: 1;
+			visibility: visible;
+			overflow: visible;
+		}
+
+		&__footer {
+			background-color: $brand-dark-blue;
+			text-align:center;
+			padding: 1.5em 1em;
+
+			@include media( $large-screen-up ) {
+				display: none;
+			}
+		}
+
+		&__cta a.button{
+			width: 100%;
+		}
+	}
+
+	.site-branding {
+		padding: 0 1em;
+	}
+
 	.logo a {
 		display: block;
-		padding: 10px 0 20px 0;
+		padding: 5px 0 0px 0;
+		max-height: 75px;
 		overflow: hidden;
 		height: $menu-height;
 		line-height: $menu-height;
+
+		@include media( $large-screen-up ) {
+			max-height: 100%;
+			padding: 10px 0 20px 0;
+		}
 
 		img {
 			max-height: 95%;
@@ -30,27 +80,50 @@ body {
 	}
 
 	.menu {
-		display: table;
-	    vertical-align: middle;
+		display: block;
 	    margin: 0;
 	    float: none;
+	    background-color: $brand-dark-blue;
+
+	    @include media($large-screen-up) {
+	    	display: table;
+	    	vertical-align: middle;
+	    	background-color: $white;
+	    }
 	}
 
 	.menu li{
-		display: table-cell;
-		text-align: center;
+		display: block;
 		padding-bottom: 0;
 		margin: 0;
-		height: $menu-height;
-		line-height: $menu-height;
+		padding-left: 25px;
+		height: 50px;
+		line-height: 50px;
+		border-bottom: 2px solid shade( $brand-dark-blue, 10 );
 		@include transition(all 0.2s ease-in-out);
+
+		@include media( $large-screen-up ) {
+			display: table-cell;
+			padding-left:0;
+			text-align: center;
+			height: $menu-height;
+			line-height: $menu-height;
+			border-bottom: 0px;
+		}
+
 		a {
 			display: block;
 			padding: 0 16px;
 			white-space: nowrap;
 			height: 60px;
-			color: $brand-orange;
+			color: $white;
 			font-size: 1rem;
+			text-transform: uppercase;
+			font-weight: 700;
+
+			@include media( $large-screen-up ) {
+				color: $brand-orange;
+			}
 		}
 
 		&:hover {
@@ -60,11 +133,50 @@ body {
 			}
 		}
 	}
+
+
+	.header-menu-button {
+		position: absolute;
+		right: 0;
+		top:4px;
+		font-size: 2em;
+		width: 75px;
+		height: 75px;
+		z-index: 1000;
+		text-align: center;
+
+		@include media($large-screen-up) {
+			display: none;
+		}
+
+		span {
+			font-size: 14px;
+			line-height: 15px;
+			margin-top: -10px ;
+			padding: 0; 
+			text-transform: uppercase;
+			display: block;
+		}
+
+		a.header-menu-trigger {
+			color: $brand-orange; 
+			padding: 0;
+			height: 75px;
+			line-height: 55px;
+
+			&:hover {
+				color: $white;
+				background-color: $brand-orange;
+			}
+		}
+	}
+
+
 }
 
 .site-title {
+  @include media($medium-screen-up) {
 	padding-top: 0;
 	margin-bottom: 0;
+  }
 }
-
-

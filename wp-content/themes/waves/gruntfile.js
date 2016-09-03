@@ -102,10 +102,14 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['sass/{,*/}*.scss', 
-      'js/src/AccordionTabs.js'
-      ],
-      tasks: ['sass:watch', 'concat']
+      sass: {
+      files: ['sass/{,*/}*.scss'],
+      tasks: ['sass:watch']
+      },
+      js: {
+        files: jsFileList,
+        tasks: ['concat']
+      }
     }
   });
 
