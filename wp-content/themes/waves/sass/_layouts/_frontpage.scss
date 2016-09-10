@@ -7,10 +7,15 @@
 
 		.featured-image {
 			padding: 25px;
+			@include media( $medium-screen-up ) {
+				padding: 0 25px;
+			}
 		}
 
 		.featured-content {
-			padding-top: 80px;
+			@include media( $xlarge-screen-up ) {
+				padding-top: 40px;
+			}
 		}
 
 	}
@@ -21,7 +26,7 @@
 	background-position: center;
 	position: relative;
 
-	.row {
+	.row { 
 		position: relative;
 		z-index: 10;
 	}

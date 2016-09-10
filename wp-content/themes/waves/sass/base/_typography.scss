@@ -3,6 +3,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  font-weight: 300;
 }
 
 h1,
@@ -18,8 +19,17 @@ h6 {
   margin: 0 0 $small-spacing;
 }
 
+
 p {
   margin: 0 0 $small-spacing;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.summary {
+  font-size: 1.3rem;
 }
 
 a {

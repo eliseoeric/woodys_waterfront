@@ -17,3 +17,28 @@ dt {
 dd {
   margin: 0;
 }
+
+.inline-list {
+	list-style-type: none;
+
+	li{
+		display: inline-block;
+	}
+
+	&.deliminated{
+		li {
+			padding: 0 0px 0 15px;
+			&:after {
+				margin-left: 15px;
+				content: " + ";
+				display: inline-block;
+			}
+
+			&:last-of-type {
+				&:after {
+					content: "";
+				}
+			}
+		}
+	}
+}

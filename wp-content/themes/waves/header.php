@@ -51,7 +51,6 @@
 					</a>
 				</div>
 			</div>
-
 			<nav id="site-navigation" class="six columns site-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				<div class="site-navigation__footer">
