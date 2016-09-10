@@ -45,7 +45,7 @@ class Gravity_Form_Handler {
 	}
 
 	public function ww_choice_markup( $choice_markup, $choice, $field, $value ) {
-		dd($field);
+		// dd($field);
 		if( $field->get_input_type() == 'radio' ) {
 			return "<li class='gchoice_{$field['formId']}_{$field['id']} field'><label class='radio' for='radio'><input name='radio' id='radio1' value='' type='radio'><span><i class='icon-dot'></i></span>Radio Button</label></li>";
 		}

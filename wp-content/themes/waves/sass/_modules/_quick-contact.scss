@@ -4,27 +4,56 @@
 	display: table;
     vertical-align: middle;
     margin: 0;
-    float: right;
+    width: 100%;
+    padding: 0 1em;
+    background-color: $light-gray;
+
+    @include media( $xlarge-screen-up ) {
+    	background-color: $white;
+    	width: auto;
+    	float:right;
+    }
+
+    ul {
+    	float:right;
+
+    	@include media( $xlarge-screen-up ) {
+    		float:left;
+    	}
+    }
 
 	li {
 		display: table-cell;
 		text-align: center;
 		padding-bottom: 0;
-		margin: 0;
-		height: $menu-height;
-		line-height: $menu-height;
+		margin: 0; 
+
+		@include media( $xlarge-screen-up ) {
+			height: $menu-height;
+			line-height: $menu-height;
+
+			a{
+				height: 60px; 
+				padding: 0px 5px;
+			}
+   		}
 
 		a {
 			display: block;
-			padding: 0 5px;
-			white-space: nowrap;
-			height: 60px;
+			padding: 10px 5px; 
+			white-space: nowrap; 
+			height: 45px;
 			color: $brand-orange;
 			font-size: 1rem;
+
+			@include media( $xlarge-screen-up ) {
+				height: $menu-height;
+				padding: 0px 5px; 
+			}
 		}
 	}
 
-	&__item--cart {
+	&__item--cart { 
 		padding: 0 10px;
 	}
 

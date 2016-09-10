@@ -44,14 +44,30 @@
 						<img src="<?php echo $logo_url; ?>" alt="Woody's Waterfront"/>
 					</a>
 				</h1>
+				<div class="header-menu-button">
+					<a href="" class="header-menu-trigger menu-trigger">
+						<i class="fa fa-bars"></i>
+						<span class="menu-trigger__button">Menu</span>
+					</a>
+				</div>
 			</div>
-
-			<nav id="site-navigation" class="six columns" role="navigation">
+			<nav id="site-navigation" class="six columns site-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<div class="site-navigation__footer">
+					<ul>
+						<li class="site-navigation__cta">
+							<a href="tel:727-360-9165" class="button">Call Now</a>
+						</li>
+					</ul>	
+				</div>
 			</nav>
 
 			<div id="quick-contact" class="quick-contact">
 				<ul>
+					<li class="quick-contact__item"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+					<li class="quick-contact__item"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+					<li class="quick-contact__item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li class="quick-contact__item"><a href="#"><i class="fa fa-tripadvisor"></i></a></li>
 					<?php // add the woocommerce cart  ?>
 					<?php if( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) : ?>
 						<?php $count = WC()->cart->cart_contents_count; ?>
@@ -60,10 +76,6 @@
 						</a></strong></li>
 					 <?php endif; ?>
 					<li class="quick-contact__item--phone"><strong><a href="tel:727-360-9164"><i class="fa fa-phone"></i>727-360-9164</a></strong></li>
-					<li class="quick-contact__item"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-					<li class="quick-contact__item"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-					<li class="quick-contact__item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-					<li class="quick-contact__item"><a href="#"><i class="fa fa-tripadvisor"></i></a></li>
 				</ul>
 			</div>
 		</header>

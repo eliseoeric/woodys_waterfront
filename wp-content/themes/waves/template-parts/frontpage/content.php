@@ -10,14 +10,14 @@
 <section id="" <?php post_class(); ?> >
 	<div class="banner frontpage__main_content wave-border wrapper extra ">
 		<div class="container entry-content">
-			<div class="five columns featured-image jazz-img">
-				<?php waterfront_image_overlay( get_template_directory_uri() . '/img/jared_no_mask.jpg',  "So close to the water your burger gets wet", "Woody's Waterfront Entrance" );?>
-			</div>
 			<div class="seven columns featured-content">
 				<header class="entry-header">
 					<?php the_title( '<h3 class="cl-blue entry-title">', '</h3>' ); ?>
 				</header><!-- .entry-header -->
 				<?php the_content(); ?>
+			</div>
+			<div class="five columns featured-image jazz-img">
+				<?php waterfront_image_overlay( get_template_directory_uri() . '/img/jared_no_mask.jpg',  "So close to the water your burger gets wet", "Woody's Waterfront Entrance" );?>
 			</div>
 			
 			<?php

@@ -12,14 +12,18 @@
 
 	<div class="wrapper separator-wave">
 		<div class="container">
-			<div class="three columns ">
+			<!-- <div class="three columns ">
 				<img src="<?php echo get_template_directory_uri() . '/img/happy_hour.png'; ?>" alt="Woody's Waterfront Entrance">	
-			</div>
-			<div class="nine columns">
-				<h2 class="cl-white">Every Sunday & Monday All Day</h2>
-				<h4 class="cl-white">Big Fish Sandwich</h4>
-				<h4 class="cl-white">1/2 Price Well Margaritas</h4>
-				<h4 class="cl-white">1/2 Price Martinis and Manhattans</h4>
+			</div> -->
+			<div class="twelve columns text-center headline-container">
+				<p class="cl-white h5 mg-b-0">Every Sunday & Monday All Day</p>
+				<p class="cl-white h1 mega uppercase">1/2 Priced Happy Hour</p>
+				<ul class="cl-white inline-list deliminated">
+					<li>Big Fish Sandwich</li>
+					<li>1/2 Price Well Margaritas</li>
+					<li>1/2 Price Martinis and Manhattans</li>
+				</ul>
+				
 			</div>
 		</div>	
 	</div>

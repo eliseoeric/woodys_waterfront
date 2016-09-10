@@ -4,7 +4,7 @@ $large-screen: 900px;
 
 // Typography
 $style-font: 'Montserrat', sans-serif;
-$base-font-family: 'Droid Sans', sans-serif;
+$base-font-family: 'Lato', sans-serif;
 $heading-font-family: $style-font, sans-serif;
 
 // Font Sizes
@@ -20,11 +20,6 @@ $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
-// Colors
-$blue: #1565c0;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
 
 // Font Colors
 $base-font-color: $dark-gray;
