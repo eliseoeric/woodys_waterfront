@@ -22,7 +22,7 @@ footer.site-footer {
 }
 
 .footer-column{
-	@include span-columns(3);
+	@include span-columns( 12 );
 	h1,h2,h3,h4,h5,h6, p {
 		color: shade( $white, 10 );
 	}
@@ -38,8 +38,16 @@ footer.site-footer {
 		}
 	}
 
-	&.wide {
-		@include span-columns(6);
+	@include media( $large-screen-up ) {
+		@include span-columns(3);
+	}
+
+	&.wide { 
+		@include span-columns( 12 );
+		
+		@include media( $large-screen-up ) {
+			@include span-columns(6);
+		}
 	}
 }
 

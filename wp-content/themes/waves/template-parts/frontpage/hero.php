@@ -18,7 +18,7 @@
 		<div class="row hero_row ">
 
 			<div class="front-hero__content text-center mg-t-50">
-				<img class="front-hero__logo" src="<?php echo $options['_waterfront_logo']; ?>">
+				<img class="front-hero__logo desktop-only" src="<?php echo $options['_waterfront_logo']; ?>">
 				<h2 class="mg-b-25">So close to the water your burgers going to get wet!</h2>
 				<div class="large secondary button"><a href="#">View Menu</a></div>
 				<div class="large primary button mobile-only"><a href="#">Call Now</a></div>
