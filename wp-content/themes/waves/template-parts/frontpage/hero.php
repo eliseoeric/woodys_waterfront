@@ -13,7 +13,7 @@
 	$options = get_option('framework_options');
 	$video_url = $options['_waterfront_video_url'];
 ?>
-<section id="hero" class="front-hero upslash-bg waves-section" data-bottom="0 0.5 0.33 0 0.66 1 1 0.5" data-background="video http://localhost/woodys_waterfront/wp-content/themes/waves/img/video/video_1">
+<section id="hero" class="front-hero upslash-bg waves-section" data-bottom="0 0.5 0.33 0 0.66 1 1 0.5" data-background="video http://woodys.wpengine.com/static/video_2">
 	<div class="container front-hero__container">
 		<div class="row hero_row ">
 
