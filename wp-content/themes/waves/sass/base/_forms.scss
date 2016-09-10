@@ -81,3 +81,23 @@ select {
   max-width: 100%;
   width: auto;
 }
+
+.gform_wrapper {
+  .waterfront_input {
+    
+    .ginput_container.ginput_container_text {
+      margin-top: 0;
+    }
+
+    label {
+      color: $light-gray;
+      text-transform: uppercase;
+    }
+
+    input {
+      padding: 6px 12px;
+      font-size: modular-scale(2);
+      line-height: 2.2rem;
+    }
+  }
+}
