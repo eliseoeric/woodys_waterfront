@@ -125,7 +125,8 @@ body {
 				color: $brand-orange;
 			}
 		}
-
+		
+		&.current-menu-item,
 		&:hover {
 			background-color: $brand-orange;
 			a {
