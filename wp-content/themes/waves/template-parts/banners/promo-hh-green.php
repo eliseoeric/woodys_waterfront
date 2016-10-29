@@ -13,9 +13,9 @@
 	<div class="waves-padding">
 		<div class="container">
 			<div class="twelve columns text-center headline-container">
-				<p class="cl-white h5 mg-b-0">Every Sunday & Monday All Day</p>
-				<p class="cl-white h1 mega uppercase">1/2 Priced Happy Hour</p>
-				<ul class="cl-white inline-list deliminated">
+				<p class="cl-white heading-script h5 mg-b-0">Every Sunday & Monday All Day</p>
+				<p class="cl-white h1 mega heading-black uppercase">1/2 Priced Happy Hour</p>
+				<ul class="cl-white heading-handmade inline-list deliminated">
 					<li>Big Fish Sandwich</li>
 					<li>1/2 Price Well Margaritas</li>
 					<li>1/2 Price Martinis and Manhattans</li>
