@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="twelve column pd-b-15 pd-t-15 text-center">
 					<h2>Dinner at Woody's Waterfront</h2>
-					<p class="summary">Casual waterfront dining, in the traditions of Old Florida</p>
+					<p class="summary heading-handmade">Casual waterfront dining, in the traditions of Old Florida</p>
 				</div>
 			</div>
 			<div class="row">

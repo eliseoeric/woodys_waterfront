@@ -50,7 +50,7 @@ function waterfront_image_overlay( $image_url, $desc = "", $alt = "", $url = "",
 		<img src="<?php echo $image_url ?>" alt="<?php echo $alt; ?>">
 		<figcaption>
 			<!-- <h2 class="">Woody's <span>Waterfront</span></h2> -->
-			<p><?php echo $desc; ?></p>
+			<p class="heading-script h3"><?php echo $desc; ?></p>
 			<a href="<?php echo $url; ?>">View more</a>
 		</figcaption>			
 	</figure>	

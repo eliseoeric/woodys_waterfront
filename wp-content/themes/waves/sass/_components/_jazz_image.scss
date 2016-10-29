@@ -60,9 +60,9 @@
 	height: 100%;
 	border-radius: $img-radius;
 
-	@include media( $xlarge-screen-up ) {
-		top: 25px;
-	}
+	// @include media( $xlarge-screen-up ) {
+	// 	top: 25px;
+	// }
 }
 
 /* Anchor will cover the whole item by default */
@@ -157,9 +157,9 @@ figure.effect-jazz h2 {
 }
 
 figure.effect-jazz p {
-	padding: 0.5em 2em;
+	padding: 0.5em 1em;
 	text-transform: none;
-	font-size: 0.85em;
+	font-size: 1.5em;
 	font-weight: 700;
 	text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 	opacity: 0;

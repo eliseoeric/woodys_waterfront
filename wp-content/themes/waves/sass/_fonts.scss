@@ -6,13 +6,64 @@
 
 
 @font-face {
- font-family: '#{$style-font}';
+ font-family: 'nexa-rust-script-3';
  font-style: normal;
  font-weight: 300;
- src: url(../fonts/#{$style-font}.eot);
- src: url('../fonts/#{$style-font}.eot?#iefix') format('ie9-skip-eot'),
-      url('../fonts/#{$style-font}.woff') format('woff'),
-      url('../fonts/#{$style-font}.ttf')  format('truetype');
+ src: url(../fonts/nexa-rust-script-3.eot);
+ src: url('../fonts/nexa-rust-script-3.eot?#iefix') format('ie9-skip-eot'),
+      url('../fonts/nexa-rust-script-3.woff') format('woff'),
+      url('../fonts/nexa-rust-script-3.ttf')  format('truetype');
+}
+
+@font-face {
+ font-family: 'nexa-rust-black-3';
+ font-style: normal;
+ font-weight: 300;
+ src: url(../fonts/nexa-rust-black-3.eot);
+ src: url('../fonts/nexa-rust-black-3.eot?#iefix') format('ie9-skip-eot'),
+      url('../fonts/nexa-rust-black-3.woff') format('woff'),
+      url('../fonts/nexa-rust-black-3.ttf')  format('truetype');
+}
+
+@font-face {
+ font-family: 'nexa-rust-slab-3';
+ font-style: normal;
+ font-weight: 300;
+ src: url(../fonts/nexa-rust-slab-3.eot);
+ src: url('../fonts/nexa-rust-slab-3.eot?#iefix') format('ie9-skip-eot'),
+      url('../fonts/nexa-rust-slab-3.woff') format('woff'),
+      url('../fonts/nexa-rust-slab-3.ttf')  format('truetype');
+}
+
+@font-face {
+ font-family: 'nexa-rust-book-3';
+ font-style: normal;
+ font-weight: 300;
+ src: url(../fonts/nexa-rust-book-3.eot);
+ src: url('../fonts/nexa-rust-book-3.eot?#iefix') format('ie9-skip-eot'),
+      url('../fonts/nexa-rust-book-3.woff') format('woff'),
+      url('../fonts/nexa-rust-book-3.ttf')  format('truetype');
+}
+
+
+@font-face {
+ font-family: 'nexa-rust-handmade';
+ font-style: normal;
+ font-weight: 300;
+ src: url(../fonts/nexa-rust-handmade.eot);
+ src: url('../fonts/nexa-rust-handmade.eot?#iefix') format('ie9-skip-eot'),
+      url('../fonts/nexa-rust-handmade.woff') format('woff'),
+      url('../fonts/nexa-rust-handmade.ttf')  format('truetype');
+}
+
+@font-face {
+ font-family: 'nexa-rust-extra-words';
+ font-style: normal;
+ font-weight: 300;
+ src: url(../fonts/nexa-rust-extra-words.eot);
+ src: url('../fonts/nexa-rust-extra-words.eot?#iefix') format('ie9-skip-eot'),
+      url('../fonts/nexa-rust-extra-words.woff') format('woff'),
+      url('../fonts/nexa-rust-extra-words.ttf')  format('truetype');
 }
 
 // To include your own, local copies of fonts, use the following template

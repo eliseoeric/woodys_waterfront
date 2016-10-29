@@ -822,7 +822,7 @@ button.secondary, input[type="button"].secondary, input[type="reset"].secondary,
 }
 /* line 30, ../sass/base/_buttons.scss */
 button.secondary:hover, button.secondary:focus, input[type="button"].secondary:hover, input[type="button"].secondary:focus, input[type="reset"].secondary:hover, input[type="reset"].secondary:focus, input[type="submit"].secondary:hover, input[type="submit"].secondary:focus, .button.secondary:hover, .button.secondary:focus {
-  background-color: #c84229;
+  background-color: #c84228;
   color: #fff;
 }
 /* line 37, ../sass/base/_buttons.scss */
@@ -836,7 +836,7 @@ button.full-width, input[type="button"].full-width, input[type="reset"].full-wid
 }
 /* line 46, ../sass/base/_buttons.scss */
 button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus, .button:hover, .button:focus {
-  background-color: #0081c9;
+  background-color: #0080c8;
   color: #fff;
 }
 /* line 52, ../sass/base/_buttons.scss */
@@ -896,7 +896,7 @@ select[multiple] {
 /* line 40, ../sass/base/_forms.scss */
 input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
 select[multiple]:hover {
-  border-color: #c6c6c6;
+  border-color: #c5c5c5;
 }
 /* line 44, ../sass/base/_forms.scss */
 input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
@@ -1103,7 +1103,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif, sans-serif;
+  font-family: "nexa-rust-black-3", sans-serif;
   letter-spacing: 15px;
   font-size: 1.2em;
   line-height: 1.2;
@@ -1133,7 +1133,7 @@ a {
 }
 /* line 40, ../sass/base/_typography.scss */
 a:active, a:focus, a:hover {
-  color: #0079bc;
+  color: #0078bc;
 }
 
 /* line 47, ../sass/base/_typography.scss */
@@ -1238,7 +1238,7 @@ span.block {
 
 /* line 72, ../sass/base/_core.scss */
 .cl-dark-blue {
-  color: #0079bc;
+  color: #0078bc;
 }
 
 /* line 76, ../sass/base/_core.scss */
@@ -1258,7 +1258,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   transition: all 0.5s ease-in-out;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
@@ -1336,13 +1336,74 @@ h6, .h6 {
     font-size: 1.2em;
   }
 }
+/* line 32, ../sass/base/_headings.scss */
+.heading-script {
+  font-family: "nexa-rust-script-3";
+}
+
+/* line 36, ../sass/base/_headings.scss */
+.heading-black {
+  font-family: "nexa-rust-black-3";
+}
+
+/* line 40, ../sass/base/_headings.scss */
+.heading-book {
+  font-family: "nexa-rust-book-3";
+  font-weight: 300;
+}
+
+/* line 45, ../sass/base/_headings.scss */
+.heading-handmade {
+  font-family: "nexa-rust-handmade";
+}
+
+/* line 49, ../sass/base/_headings.scss */
+.heading-extra-words {
+  font-family: "nexa-rust-extra-words";
+}
+
 /* Fonts */
 @font-face {
-  font-family: "Montserrat, sans-serif";
+  font-family: 'nexa-rust-script-3';
   font-style: normal;
   font-weight: 300;
-  src: url(../fonts/Montserrat, sans-serif.eot);
-  src: url("../fonts/Montserrat, sans-serif.eot?#iefix") format("ie9-skip-eot"), url("../fonts/Montserrat, sans-serif.woff") format("woff"), url("../fonts/Montserrat, sans-serif.ttf") format("truetype");
+  src: url(../fonts/nexa-rust-script-3.eot);
+  src: url("../fonts/nexa-rust-script-3.eot?#iefix") format("ie9-skip-eot"), url("../fonts/nexa-rust-script-3.woff") format("woff"), url("../fonts/nexa-rust-script-3.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'nexa-rust-black-3';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/nexa-rust-black-3.eot);
+  src: url("../fonts/nexa-rust-black-3.eot?#iefix") format("ie9-skip-eot"), url("../fonts/nexa-rust-black-3.woff") format("woff"), url("../fonts/nexa-rust-black-3.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'nexa-rust-slab-3';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/nexa-rust-slab-3.eot);
+  src: url("../fonts/nexa-rust-slab-3.eot?#iefix") format("ie9-skip-eot"), url("../fonts/nexa-rust-slab-3.woff") format("woff"), url("../fonts/nexa-rust-slab-3.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'nexa-rust-book-3';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/nexa-rust-book-3.eot);
+  src: url("../fonts/nexa-rust-book-3.eot?#iefix") format("ie9-skip-eot"), url("../fonts/nexa-rust-book-3.woff") format("woff"), url("../fonts/nexa-rust-book-3.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'nexa-rust-handmade';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/nexa-rust-handmade.eot);
+  src: url("../fonts/nexa-rust-handmade.eot?#iefix") format("ie9-skip-eot"), url("../fonts/nexa-rust-handmade.woff") format("woff"), url("../fonts/nexa-rust-handmade.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'nexa-rust-extra-words';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/nexa-rust-extra-words.eot);
+  src: url("../fonts/nexa-rust-extra-words.eot?#iefix") format("ie9-skip-eot"), url("../fonts/nexa-rust-extra-words.woff") format("woff"), url("../fonts/nexa-rust-extra-words.ttf") format("truetype");
 }
 /* line 4, ../sass/_margin-padding.scss */
 .mg-b-0 {
@@ -1900,7 +1961,7 @@ body {
   padding-left: 25px;
   height: 50px;
   line-height: 50px;
-  border-bottom: 2px solid #0e3254;
+  border-bottom: 2px solid #0d3253;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -2054,13 +2115,6 @@ body {
   height: 100%;
   border-radius: 10px;
 }
-@media screen and (min-width: 75em) {
-  /* line 54, ../sass/_components/_jazz_image.scss */
-  .jazz-img figure figcaption,
-  .jazz-img figure figcaption > a {
-    top: 25px;
-  }
-}
 
 /* Anchor will cover the whole item by default */
 /* line 69, ../sass/_components/_jazz_image.scss */
@@ -2163,9 +2217,9 @@ figure.effect-jazz h2 {
 
 /* line 159, ../sass/_components/_jazz_image.scss */
 figure.effect-jazz p {
-  padding: 0.5em 2em;
+  padding: 0.5em 1em;
   text-transform: none;
-  font-size: 0.85em;
+  font-size: 1.5em;
   font-weight: 700;
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   opacity: 0;
@@ -2203,7 +2257,7 @@ figure.effect-jazz:hover p {
 /* line 1, ../sass/_components/_footer.scss */
 footer.site-footer {
   padding-top: 200px;
-  background-color: #0c2d4a;
+  background-color: #0c2c4a;
   position: relative;
 }
 /* line 18, ../sass/_components/_footer.scss */
@@ -2225,7 +2279,7 @@ footer.site-footer .row {
 }
 /* line 26, ../sass/_components/_footer.scss */
 .footer-column h1, .footer-column h2, .footer-column h3, .footer-column h4, .footer-column h5, .footer-column h6, .footer-column p {
-  color: #e6e6e6;
+  color: #e5e5e5;
 }
 /* line 30, ../sass/_components/_footer.scss */
 .footer-column h5 {
@@ -2234,11 +2288,11 @@ footer.site-footer .row {
 }
 /* line 34, ../sass/_components/_footer.scss */
 .footer-column a {
-  color: #e6e6e6;
+  color: #e5e5e5;
 }
 /* line 36, ../sass/_components/_footer.scss */
 .footer-column a:hover {
-  color: #0091e2;
+  color: #0090e1;
 }
 @media screen and (min-width: 60em) {
   /* line 24, ../sass/_components/_footer.scss */
@@ -2288,7 +2342,7 @@ footer.site-footer .row {
 /* line 60, ../sass/_components/_footer.scss */
 .footer-widget__content {
   padding: 20px;
-  border: 1px solid #0b2741;
+  border: 1px solid #0a2741;
 }
 
 /* line 66, ../sass/_components/_footer.scss */
@@ -2454,7 +2508,7 @@ ul.social_icons li {
   white-space: nowrap;
   height: 45px;
   color: #FA5333;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 @media screen and (min-width: 75em) {
   /* line 41, ../sass/_modules/_quick-contact.scss */
@@ -2643,12 +2697,12 @@ ul.social_icons li {
 
 /* line 2, ../sass/_modules/_widgets.scss */
 .footer-widget .gform_wrapper label.gfield_label {
-  color: #e6e6e6;
+  color: #e5e5e5;
 }
 /* line 6, ../sass/_modules/_widgets.scss */
 .footer-widget .gform_wrapper input[type="text"],
 .footer-widget .gform_wrapper input[type="email"] {
-  background-color: #e6e6e6;
+  background-color: #e5e5e5;
 }
 /* line 11, ../sass/_modules/_widgets.scss */
 .footer-widget .gform_wrapper .gform_footer input[type="submit"] {
@@ -2693,6 +2747,26 @@ ul.social_icons li {
     width: 1.5em;
     height: 1.5em;
   }
+}
+
+/* line 33, ../sass/_modules/_social-media.scss */
+a .fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+/* line 37, ../sass/_modules/_social-media.scss */
+a .fa-twitter-square:hover {
+  color: #4099ff;
+}
+
+/* line 41, ../sass/_modules/_social-media.scss */
+a .fa-instagram:hover {
+  color: #bc2a8d;
+}
+
+/* line 45, ../sass/_modules/_social-media.scss */
+a .fa-tripadvisor:hover {
+  color: #589442;
 }
 
 /* line 2, ../sass/_layouts/_frontpage.scss */

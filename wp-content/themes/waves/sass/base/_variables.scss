@@ -4,11 +4,17 @@ $large-screen: 900px;
 
 // Typography
 $style-font: 'Montserrat', sans-serif;
+$nexa-rust-script: 'nexa-rust-script-3';
+$nexa-rust-slab: 'nexa-rust-slab-3';
+$nexa-rust-black: 'nexa-rust-black-3';
+$nexa-rust-book: 'nexa-rust-book-3';
+$nexa-rust-handmade: 'nexa-rust-handmade';
+$nexa-rust-extra-words: 'nexa-rust-extra-words';
 $base-font-family: 'Lato', sans-serif;
-$heading-font-family: $style-font, sans-serif;
+$heading-font-family: $nexa-rust-black, sans-serif;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1em; 
 
 // Line height
 $base-line-height: 1.5;

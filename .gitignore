@@ -24,7 +24,8 @@ wp-content/themes/*
 !wp-content/themes/waterfront/
 !wp-content/themes/waves/
 node_modules/*
-wp-content/themes/waves/node_modules/*
+wp-content/themes/waves/node_modules/
+wp-content/themes/waves/fonts/nexa-rust/
 
 .DS_Store
 .svn
