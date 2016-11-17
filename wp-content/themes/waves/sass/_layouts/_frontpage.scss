@@ -42,7 +42,7 @@
 }
 .front-hero {
 	&__content {
-		padding: 250px 1em 75px 1em;
+		padding: 175px 1em 0px 1em;
 		text-align: center;
 
 		h1,h2,h3,h4,h5,h6, p {
@@ -60,10 +60,7 @@
 		}
 
 		.button {
-			@include media($medium-screen-up) { 
-				margin-right: 25px;
-			}
-			
+			margin-right: 25px;
 			margin-bottom: 25px;
 		}
 

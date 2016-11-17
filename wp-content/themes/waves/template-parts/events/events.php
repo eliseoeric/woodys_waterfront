@@ -8,11 +8,12 @@
 			<h4>Woody's Waterfront Events</h4>
 			<h3>Don't Miss Out!</h3>
 		</div>
+		<div class="row">
 		<?php $entertainers = get_post_meta( get_the_ID(), '_WW_entertainers', true ); ?>
 		<?php foreach( $entertainers as $entertainer ) : ?>
 			<div class="four columns entertainer-card">
 				<div class="entertainer-details">
-					<h4><a href="<?php echo $entertainer['entertainer_url']; ?>" target="_blank" class="cl-dark-blue"><?= $entertainer['entertainer_name']; ?></a></h4>
+					<h6><a href="<?php echo $entertainer['entertainer_url']; ?>" target="_blank" class="cl-dark-blue"><?= $entertainer['entertainer_name']; ?></a></h6>
 					<span class="cl-dark-blue block"><small><i class="fa fa-clock-o mg-r-10"></i><?= $entertainer['entertainer_schedule']; ?></small></span>
 					<span class="cl-dark-blue block"><small><i class="fa fa-map-marker mg-r-15"></i>Woody's Waterfront</small></span>
 				</div>
@@ -24,5 +25,6 @@
 				</div>
 			</div>
 		<?php endforeach; ?>
+		</div>
 	</div>
 </section>

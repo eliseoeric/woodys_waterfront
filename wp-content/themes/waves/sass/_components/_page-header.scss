@@ -36,3 +36,11 @@
 		}
 	}
 }
+
+
+.entry-header {
+	text-align:center;
+	@include media( $medium-screen-up ) {
+		text-align: left;
+	}
+}

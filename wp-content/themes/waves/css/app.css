@@ -2391,6 +2391,17 @@ ul.social_icons li {
   text-align: left;
 }
 
+/* line 41, ../sass/_components/_page-header.scss */
+.entry-header {
+  text-align: center;
+}
+@media screen and (min-width: 43em) {
+  /* line 41, ../sass/_components/_page-header.scss */
+  .entry-header {
+    text-align: left;
+  }
+}
+
 /* line 2, ../sass/_components/_review-cards.scss */
 .review__block {
   padding: 25px;
@@ -2666,20 +2677,20 @@ ul.social_icons li {
 }
 /* line 75, ../sass/_modules/_tabs.scss */
 .accordion-tabs .tab-link.is-active {
-  background-color: white;
+  background-color: #fbf7ec;
 }
 @media screen and (min-width: 600px) {
   /* line 75, ../sass/_modules/_tabs.scss */
   .accordion-tabs .tab-link.is-active {
-    background-color: white;
+    background-color: #fbf7ec;
     border: 1px solid #f7f7f7;
-    border-bottom-color: white;
+    border-bottom-color: #fbf7ec;
     margin-bottom: -1px;
   }
 }
 /* line 87, ../sass/_modules/_tabs.scss */
 .accordion-tabs .tab-content {
-  background: white;
+  background: #fbf7ec;
   display: none;
   padding: 1.5em 1.618em;
   width: 100%;
@@ -2814,7 +2825,7 @@ a .fa-tripadvisor:hover {
 
 /* line 44, ../sass/_layouts/_frontpage.scss */
 .front-hero__content {
-  padding: 250px 1em 75px 1em;
+  padding: 175px 1em 0px 1em;
   text-align: center;
 }
 /* line 48, ../sass/_layouts/_frontpage.scss */
@@ -2837,21 +2848,16 @@ a .fa-tripadvisor:hover {
 }
 /* line 62, ../sass/_layouts/_frontpage.scss */
 .front-hero__content .button {
+  margin-right: 25px;
   margin-bottom: 25px;
 }
-@media screen and (min-width: 43em) {
-  /* line 62, ../sass/_layouts/_frontpage.scss */
-  .front-hero__content .button {
-    margin-right: 25px;
-  }
-}
-/* line 72, ../sass/_layouts/_frontpage.scss */
+/* line 69, ../sass/_layouts/_frontpage.scss */
 .front-hero__logo {
   width: 100%;
   max-width: 350px;
 }
 
-/* line 79, ../sass/_layouts/_frontpage.scss */
+/* line 76, ../sass/_layouts/_frontpage.scss */
 .row.hero_row {
   position: absolute;
   z-index: 10;
@@ -2861,7 +2867,7 @@ a .fa-tripadvisor:hover {
   justify-content: center;
 }
 @media screen and (min-width: 60em) {
-  /* line 79, ../sass/_layouts/_frontpage.scss */
+  /* line 76, ../sass/_layouts/_frontpage.scss */
   .row.hero_row {
     padding-left: 150px;
     padding-right: 150px;
