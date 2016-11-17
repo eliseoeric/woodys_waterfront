@@ -10,9 +10,15 @@
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 8000,
-			slidesToShow:2,
+			slidesToShow:1,
 			speed: 330,
-			infinite: true 
+			infinite: true,
+			responsive: [
+				{
+					breakpoint: 600,
+					slidesToShow:2,
+				}
+			]
 		});
 	});
 })( jQuery);

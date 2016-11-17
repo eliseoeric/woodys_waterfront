@@ -6,7 +6,7 @@
 		padding-bottom: 175px;		
 
 		.featured-image {
-			padding: 25px;
+			padding: 0;
 			@include media( $medium-screen-up ) {
 				padding: 0 25px;
 			}
@@ -33,16 +33,20 @@
 
 	&__container {
 		max-height: 700px;
-		min-height: 600px;
+		min-height: 300px;
 		overflow:hidden;
 		position: relative;
+
+		@include media( $medium-screen-up ) {
+			min-height: 600px;
+		}
 
 	}
 
 }
 .front-hero {
 	&__content {
-		padding: 175px 1em 0px 1em;
+		padding: 50px 1em 0px 1em;
 		text-align: center;
 
 		h1,h2,h3,h4,h5,h6, p {

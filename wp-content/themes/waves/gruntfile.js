@@ -24,6 +24,8 @@ module.exports = function(grunt) {
     'js/src/WaveElement.js',
     'js/src/Slick.js',
     'js/src/wavy.js',
+    'js/libs/jquery.waypoints.js',
+    'js/libs/sticky.min.js',
     'js/navigation.js',
     'js/skip-link-focus-fix.js',
     'js/main.js',

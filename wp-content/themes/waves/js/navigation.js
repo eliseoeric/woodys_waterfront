@@ -1,4 +1,4 @@
-window.nav = (function( window, document, $ ) {
+window.nav = (function( window, document, $, Waypoint ) {
 
 	var nav = {};
 
@@ -13,18 +13,17 @@ window.nav = (function( window, document, $ ) {
 
 		nav.assignListeners();
 		nav.controller();
+
+		nav.sticky();
 	};
 
 	nav.controller = function() {
 
 		nav.$trigger.on( 'click', function( e ) {
 			e.preventDefault();
-			console.log('click fired');
 			if( ! nav.$wrapper.hasClass( 'site-navigation--visible' ) ) {
-				console.log('step 1');
 				nav.$wrapper.addClass( 'site-navigation--visible' );
 			} else {
-				console.log('step 2');
 				nav.$wrapper.removeClass( 'site-navigation--visible' );
 			}
 		});
@@ -72,9 +71,48 @@ window.nav = (function( window, document, $ ) {
 
 	nav.checkSelected = function( menu ) {
 		return menu.find( '.submenu > a.selected').length != 0;
-	}
+	};
+
+	nav.sticky = function() {
+		var $header = $('.header-wrapper'), // the header
+			$hHeight = $header.height(), // get the height of the header#header to use later as starting point
+			prevTop = $(window).scrollTop(); // set the initial position to current positon on page
+
+		var navMenu = new Waypoint.Sticky({
+			element: $header,
+			offset: function(){
+				if(Waypoint.viewportWidth() <= 959){
+					return -15;
+				} else {
+					return -120;
+				}
+			}
+
+		});
+
+		$(window).on('scroll', function(e){
+			st = $(this).scrollTop(); // set tht scroll location
+			if( st > prevTop && st > $hHeight ) {
+				$header.addClass('global-header-scrolling');
+				$header.removeClass('global-header-initial');
+			} else {
+				if( st <= 0 ) {
+					$header.removeClass('global-header-scrolling');
+					$header.removeClass('global-header-hide');
+					$header.removeClass('global-header-initial');
+				} else if( st < $hHeight ) {
+					$header.addClass('global-header-initial');
+				} else {
+					$header.removeClass('global-header-scrolling');
+					$header.addClass('global-header-hide');
+				}
+			}
+			prevTop = st;
+		});
+
+	};
 
 	$(document).ready( nav.init );
 
 	return nav;
-})( window, document, jQuery )
+})( window, document, jQuery, Waypoint )

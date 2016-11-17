@@ -7,8 +7,9 @@
 	z-index: 0;
 }
 
-body {
-	border-top: 4px solid $brand-orange;
+.header-wrapper {
+	background-color: $white;
+	border-top: 5px solid $brand-orange;
 }
 
 .navbar {
@@ -100,7 +101,7 @@ body {
 		height: 50px;
 		line-height: 50px;
 		border-bottom: 2px solid shade( $brand-dark-blue, 10 );
-		@include transition(all 0.2s ease-in-out);
+		@include transition(background-color 0.2s ease-in-out);
 
 		@include media( $large-screen-up ) {
 			display: table-cell;
@@ -180,4 +181,118 @@ body {
 	padding-top: 0;
 	margin-bottom: 0;
   }
+}
+
+.header-wrapper.stuck {
+	@include media( $small-to-medium-only ) {
+		top: 0px;
+		position: fixed;
+		width: 100%;
+		z-index: 10;
+		@include transform( translateY(0) );
+		@include animation-name(showDeskHelper);
+		@include animation-duration(0.2s);
+		@include animation-timing-function(ease);
+	}
+
+	&.global-header-initial {
+		margin-top: 8px;
+	}
+
+	@include media( $medium-screen-up ) {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		height: 75px;
+		z-index: 100;
+		box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+		@include transform( translateY(0) );
+		@include animation-name(showDeskHelper);
+		@include animation-duration(0.2s);
+		@include animation-timing-function(ease);
+
+		.navbar .logo a,
+		.navbar .menu li,
+		.quick-contact li {
+			height: 70px;
+			line-height: 70px;
+		}
+
+		.navbar .logo a {
+			padding: 5px 0 10px 0;
+		}
+
+		.quick-contact li a {
+			height: 70px;
+		}
+	}
+}
+
+.header-wrapper.global-header-hide.global-header-initial {
+	transition: all ease-in-out 0.3s;
+}
+
+.header-wrapper.stuck.global-header-scrolling {
+	@include media( $small-to-medium-only ) {
+		@include transform( translateY(-80px) );
+		@include animation-name(hideHeader);
+		@include animation-duration(0.2s);
+		@include animation-timing-function(ease);
+	}
+}
+
+.header-wrapper.global-header-hide.stuck {
+	@include media( $small-to-medium-only ) {
+		@include transform(translateY(0px));
+		@include animation-name(showHeader);
+		@include animation-duration(0.2s);
+		@include animation-timing-function(ease);
+
+	}
+}
+
+.header-wrapper.global-header-scrolling.global-header-hide.stuck {
+	@include media( $small-to-medium-only ) {
+		// @include transform(translateY(-70px));
+		@include transform(translateY(-80px));
+		@include animation-name(hideHeader);
+		@include animation-duration(0.2s);
+		@include animation-timing-function(ease);
+	}
+}
+
+@include keyframes(showDeskHeader) {
+	from{
+		@include transform(translateY(-50px));
+	} 
+	to {
+		@include transform(translateY(0));
+	}
+}
+
+@include keyframes(hideHeader) {
+	from{
+		@include transform(translateY(0px));
+	} 
+	to {
+		@include transform(translateY(-80px));
+	}
+}
+
+@include keyframes(resetHeader) {
+	from{
+		@include transform(translateY(80px));
+	} 
+	to {
+		@include transform(translateY(0px));
+	}
+}
+
+@include keyframes(showDeskHeader) {
+	from{
+		@include transform(translateY(-50px));
+	} 
+	to {
+		@include transform(translateY(0));
+	}
 }

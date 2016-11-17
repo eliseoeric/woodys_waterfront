@@ -1,6 +1,9 @@
 
 .wrapper {
-	padding: 55px 20px 50px 20px;
+	padding: 0 20px 0 20px;
+	// @include media( $large-screen-up ) {
+	// 	padding: 55px 20px 50px 20px;
+	// }
 }
 
 

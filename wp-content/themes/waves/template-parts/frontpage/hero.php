@@ -17,12 +17,12 @@
 	<div class="container front-hero__container">
 		<div class="row hero_row ">
 
-			<div class="front-hero__content text-center mg-t-50">
+			<div class="front-hero__content text-center">
 				<img class="front-hero__logo desktop-only" src="<?php echo $options['_waterfront_logo']; ?>">
 				<h2 class="mg-b-25">So close to the water your burgers going to get wet!</h2>
-				<div class="large secondary button"><a href="#">View Menu</a></div>
-				<div class="large primary button mobile-only"><a href="#">Call Now</a></div>
-				<div class="large primary button desktop-only"><a href="#">Gift Cards</a></div>
+				<div class=" secondary button"><a href="#">View Menu</a></div>
+				<div class=" primary button mobile-only"><a href="#">Call Now</a></div>
+				<div class=" primary button desktop-only"><a href="#">Gift Cards</a></div>
 			</div>
 			<div class="front-hero__weather">
 				<?php 
