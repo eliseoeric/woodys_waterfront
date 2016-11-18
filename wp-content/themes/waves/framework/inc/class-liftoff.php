@@ -99,6 +99,7 @@ class Liftoff {
 		 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 		 */
 		add_theme_support( 'post-thumbnails' );
+		add_image_size( 'recent-post', 300, 213, true );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -137,6 +138,8 @@ class Liftoff {
 
 
 	public function register_widgets_init() {
+		unregister_widget('WP_Widget_Recent_Posts');
+
 		$widgets = array(
 			array(
 				'name'          => 'Footer Column 1',

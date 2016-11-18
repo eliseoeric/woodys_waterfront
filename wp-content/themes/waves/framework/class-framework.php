@@ -28,7 +28,8 @@ class Framework {
 
 		$this->widgets = array(
 			'Weather_Widget',
-			'Review_Widget'
+			'Review_Widget',
+			'Waves_Recent_Posts'
 		);
 
 		$this->post_types = array(
