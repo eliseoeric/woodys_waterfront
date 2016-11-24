@@ -4,12 +4,10 @@
   $base-background-color: #fff !default;
   $base-spacing: 1.5em !default;
   $action-color: #477dca !default;
-  $dark-gray: #333 !default;
-  $light-gray: #ddd !default;
   $medium-screen: em(640) !default;
-  $tab-border: 1px solid $base-border-color;
-  $tab-content-background: $brand-neutral;
-  $tab-active-background: $tab-content-background;
+  $tab-content-background: lighten( $brand-blue, 48 );
+  $tab-border: 1px solid darken( $light-gray, 5 );
+  $tab-active-background: $brand-blue;
   $tab-inactive-color: $base-background-color;
   $tab-inactive-hover-color: darken($light-gray, 5);
   $tab-mode: $medium-screen;
@@ -20,7 +18,7 @@
   padding: 0;
 
   @include media(max-width $tab-mode) {
-    border: $tab-border;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     border-radius: $base-border-radius;
   }
 
@@ -65,7 +63,7 @@
     }
 
     &:hover {
-      color: $action-color;
+      color: $tab-active-background;
     }
 
     &:focus {
@@ -74,11 +72,14 @@
 
     &.is-active {
       background-color: $tab-active-background;
-
+      color: $white;
       @include media($tab-mode) {
-        background-color: $tab-active-background;
-        border: $tab-border;
-        border-bottom-color: $tab-active-background;
+        background-color: transparent;
+        color: $tab-active-background;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 4px solid $tab-active-background;
         margin-bottom: -1px;
       }
     }
@@ -91,7 +92,8 @@
     width: 100%;
 
     @include media($tab-mode) {
-      border: $tab-border;
+      border: none;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
       border-bottom-left-radius: $base-border-radius;
       border-bottom-right-radius: $base-border-radius;
       border-top-right-radius: $base-border-radius;

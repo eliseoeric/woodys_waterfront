@@ -10,7 +10,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="four columns pd-l-10 pd-r-10 jazz-img">
+				<div class="four columns pd-l-10 pd-r-10 jazz-img mg-b-40">
 				<?php waterfront_image_overlay( get_template_directory_uri() . '/img/burgers.jpg', "Woody's Burgers - So close to the water your burger gets wet", "Woody's Burgers" );  ?>
 					<div class="jazz-img__caption">
 						<h5>Woody's Burgers</h5>
@@ -19,7 +19,7 @@
 					</div>
 				</div>
 
-				<div class="four columns pd-l-10 pd-r-10 jazz-img">
+				<div class="four columns pd-l-10 pd-r-10 jazz-img mg-b-40">
 				<?php waterfront_image_overlay( get_template_directory_uri() . '/img/wings.jpg', "World famous Woody's wings - nothing else like them!", "Woody's Wings" );  ?>
 					<div class="jazz-img__caption">
 						<h5>Woody's Wing Basket</h5>
@@ -28,7 +28,7 @@
 					</div>
 				</div>
 
-				<div class="four columns pd-l-10 pd-r-10 jazz-img">
+				<div class="four columns pd-l-10 pd-r-10 jazz-img mg-b-40">
 					<?php waterfront_image_overlay( get_template_directory_uri() . '/img/scallops.jpg', "Generous Portion of Bay Scallops, blackened with tomatoes and lots of garlic", "Woody's Large House Salad" );  ?>
 					<div class="jazz-img__caption">
 						<h5>Large House Salads</h5>

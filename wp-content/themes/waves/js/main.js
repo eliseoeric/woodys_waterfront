@@ -10,13 +10,15 @@
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 8000,
-			slidesToShow:1,
+			slidesToShow:2,
 			speed: 330,
 			infinite: true,
 			responsive: [
 				{
-					breakpoint: 600,
-					slidesToShow:2,
+					breakpoint: 960,
+					settings: {
+						slidesToShow: 1,
+					}
 				}
 			]
 		});

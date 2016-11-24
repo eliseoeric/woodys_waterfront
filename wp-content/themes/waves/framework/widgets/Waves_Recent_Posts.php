@@ -76,7 +76,7 @@ class Waves_Recent_Posts extends WP_Widget {
 			<li class="row pd-b-0">
 				<a href="<?php the_permalink(); ?>">
 					<div class="four columns">
-						<img class="" src="<?php the_post_thumbnail_url( 'recent-post' ); ?>">
+						<img class="align-center" src="<?php the_post_thumbnail_url( 'recent-post' ); ?>">
 					</div>
 					<div class="eight columns">
 						<h6 class="heading-book"><?php get_the_title() ? the_title() : the_ID(); ?></h6>

@@ -31,7 +31,7 @@
 						);
 					?>
 					<div class="review__card pd-l-20 pd-r-20 ">
-						<div class="review review__block bg-neutral">
+						<div class="review review__block bg-light-blue">
 							<header class="review__header">
 								<h5><?php the_title(); ?></h5>
 								<?php echo show_review_rating( $review_details['rating'] ); ?>

@@ -61,6 +61,10 @@ span.block {
 	background-color: lighten($brand-grey,10);
 }
 
+.bg-light-blue {
+	background-color: lighten( $brand-blue, 48 );
+}
+
 .cl-white{
 	color: $white;
 }

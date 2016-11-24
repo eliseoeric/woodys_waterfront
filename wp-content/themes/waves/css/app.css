@@ -1227,21 +1227,26 @@ span.block {
 }
 
 /* line 64, ../sass/base/_core.scss */
+.bg-light-blue {
+  background-color: #f1faff;
+}
+
+/* line 68, ../sass/base/_core.scss */
 .cl-white {
   color: #fff;
 }
 
-/* line 68, ../sass/base/_core.scss */
+/* line 72, ../sass/base/_core.scss */
 .cl-blue {
   color: #00A1FB;
 }
 
-/* line 72, ../sass/base/_core.scss */
+/* line 76, ../sass/base/_core.scss */
 .cl-dark-blue {
   color: #0078bc;
 }
 
-/* line 76, ../sass/base/_core.scss */
+/* line 80, ../sass/base/_core.scss */
 .cl-orange {
   color: #FA5333;
 }
@@ -2849,7 +2854,7 @@ ul.social_icons li {
 
 /* line 30, ../sass/_modules/_waves.scss */
 .frontpage-menu {
-  padding-top: 170px;
+  padding-top: 200px;
   padding-bottom: 80px;
   margin-bottom: 150px;
 }
@@ -2886,42 +2891,42 @@ ul.social_icons li {
 @media screen and (max-width: 600px) {
   /* line 1, ../sass/_modules/_tabs.scss */
   .accordion-tabs {
-    border: 1px solid #f7f7f7;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
   }
 }
-/* line 27, ../sass/_modules/_tabs.scss */
+/* line 25, ../sass/_modules/_tabs.scss */
 .accordion-tabs .tab-header-and-content {
   list-style: none;
 }
 @media screen and (min-width: 600px) {
-  /* line 27, ../sass/_modules/_tabs.scss */
+  /* line 25, ../sass/_modules/_tabs.scss */
   .accordion-tabs .tab-header-and-content {
     display: inline;
   }
 }
-/* line 34, ../sass/_modules/_tabs.scss */
+/* line 32, ../sass/_modules/_tabs.scss */
 .accordion-tabs .tab-header-and-content:first-child .tab-link {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 @media screen and (max-width: 600px) {
-  /* line 34, ../sass/_modules/_tabs.scss */
+  /* line 32, ../sass/_modules/_tabs.scss */
   .accordion-tabs .tab-header-and-content:first-child .tab-link {
     border-top: 0;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 43, ../sass/_modules/_tabs.scss */
+  /* line 41, ../sass/_modules/_tabs.scss */
   .accordion-tabs .tab-header-and-content:last-child .tab-link {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
   }
 }
-/* line 51, ../sass/_modules/_tabs.scss */
+/* line 49, ../sass/_modules/_tabs.scss */
 .accordion-tabs .tab-link {
   background-color: #fff;
-  border-top: 1px solid #f7f7f7;
+  border-top: 1px solid #eaeaea;
   color: #282828;
   display: block;
   font-weight: bold;
@@ -2929,7 +2934,7 @@ ul.social_icons li {
   text-decoration: none;
 }
 @media screen and (min-width: 600px) {
-  /* line 51, ../sass/_modules/_tabs.scss */
+  /* line 49, ../sass/_modules/_tabs.scss */
   .accordion-tabs .tab-link {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -2937,38 +2942,43 @@ ul.social_icons li {
     display: inline-block;
   }
 }
-/* line 67, ../sass/_modules/_tabs.scss */
+/* line 65, ../sass/_modules/_tabs.scss */
 .accordion-tabs .tab-link:hover {
   color: #00A1FB;
 }
-/* line 71, ../sass/_modules/_tabs.scss */
+/* line 69, ../sass/_modules/_tabs.scss */
 .accordion-tabs .tab-link:focus {
   outline: none;
 }
-/* line 75, ../sass/_modules/_tabs.scss */
+/* line 73, ../sass/_modules/_tabs.scss */
 .accordion-tabs .tab-link.is-active {
-  background-color: #fbf7ec;
+  background-color: #00A1FB;
+  color: #fff;
 }
 @media screen and (min-width: 600px) {
-  /* line 75, ../sass/_modules/_tabs.scss */
+  /* line 73, ../sass/_modules/_tabs.scss */
   .accordion-tabs .tab-link.is-active {
-    background-color: #fbf7ec;
-    border: 1px solid #f7f7f7;
-    border-bottom-color: #fbf7ec;
+    background-color: transparent;
+    color: #00A1FB;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #00A1FB;
     margin-bottom: -1px;
   }
 }
-/* line 87, ../sass/_modules/_tabs.scss */
+/* line 88, ../sass/_modules/_tabs.scss */
 .accordion-tabs .tab-content {
-  background: #fbf7ec;
+  background: #f1faff;
   display: none;
   padding: 1.5em 1.618em;
   width: 100%;
 }
 @media screen and (min-width: 600px) {
-  /* line 87, ../sass/_modules/_tabs.scss */
+  /* line 88, ../sass/_modules/_tabs.scss */
   .accordion-tabs .tab-content {
-    border: 1px solid #f7f7f7;
+    border: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
@@ -3052,7 +3062,7 @@ a .fa-tripadvisor:hover {
 
 /* line 2, ../sass/_layouts/_frontpage.scss */
 .frontpage__main_content {
-  margin-top: 150px;
+  margin-top: 250px;
   margin-bottom: 60px;
   background-color: #fff;
   padding-bottom: 175px;
@@ -3161,7 +3171,6 @@ a .fa-tripadvisor:hover {
 /* line 8, ../sass/_layouts/_menu.scss */
 .waves-section.menu-tabs {
   margin-bottom: -150px;
-  min-height: 800px;
   margin-top: -150px;
 }
 
