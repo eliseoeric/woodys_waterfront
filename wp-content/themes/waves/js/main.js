@@ -6,21 +6,23 @@
 
 
 	$(document).ready( function(){
-		$('.tripadvisor_reviews').slick({
-			slidesToScroll: 1,
-			autoplay: true,
-			autoplaySpeed: 8000,
-			slidesToShow:2,
-			speed: 330,
-			infinite: true,
-			responsive: [
-				{
-					breakpoint: 960,
-					settings: {
-						slidesToShow: 1,
+		if( $('body').hasClass('page-template-template-food-menu') ) {
+			$('.tripadvisor_reviews').slick({
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 8000,
+				slidesToShow:2,
+				speed: 330,
+				infinite: true,
+				responsive: [
+					{
+						breakpoint: 960,
+						settings: {
+							slidesToShow: 1,
+						}
 					}
-				}
-			]
-		});
+				]
+			});
+		}
 	});
 })( jQuery);
