@@ -47,7 +47,7 @@ if( ! function_exists('waterfront_image_overlay') ):
 function waterfront_image_overlay( $image_url, $desc = "", $alt = "", $url = "", $classes = "" ) {
 	?>
 	<figure class="effect-jazz <?php echo $classes; ?>">
-		<img src="<?php echo $image_url ?>" alt="<?php echo $alt; ?>">
+		<img src="<?php echo $image_url ?>" alt="<?php echo $alt; ?>" >
 		<figcaption>
 			<!-- <h2 class="">Woody's <span>Waterfront</span></h2> -->
 			<p class="heading-script h3"><?php echo $desc; ?></p>

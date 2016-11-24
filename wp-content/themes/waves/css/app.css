@@ -2432,15 +2432,16 @@ figure.effect-jazz {
 
 /* line 112, ../sass/_components/_jazz_image.scss */
 .entertianer-img figure.effect-jazz {
+  height: 250px;
   max-height: 250px;
 }
 
-/* line 117, ../sass/_components/_jazz_image.scss */
+/* line 118, ../sass/_components/_jazz_image.scss */
 figure.effect-jazz img {
   opacity: 0.9;
 }
 
-/* line 121, ../sass/_components/_jazz_image.scss */
+/* line 122, ../sass/_components/_jazz_image.scss */
 figure.effect-jazz figcaption::after,
 figure.effect-jazz img,
 figure.effect-jazz p {
@@ -2449,7 +2450,7 @@ figure.effect-jazz p {
   border-radius: 10px;
 }
 
-/* line 129, ../sass/_components/_jazz_image.scss */
+/* line 130, ../sass/_components/_jazz_image.scss */
 figure.effect-jazz figcaption::after {
   position: absolute;
   top: 50px;
@@ -2467,7 +2468,7 @@ figure.effect-jazz figcaption::after {
   border-radius: 10px;
 }
 
-/* line 146, ../sass/_components/_jazz_image.scss */
+/* line 147, ../sass/_components/_jazz_image.scss */
 figure.effect-jazz h2,
 figure.effect-jazz p {
   opacity: 1;
@@ -2476,7 +2477,7 @@ figure.effect-jazz p {
   border-radius: 10px;
 }
 
-/* line 154, ../sass/_components/_jazz_image.scss */
+/* line 155, ../sass/_components/_jazz_image.scss */
 figure.effect-jazz h2 {
   padding-top: 26%;
   -webkit-transition: -webkit-transform 0.35s;
@@ -2484,7 +2485,7 @@ figure.effect-jazz h2 {
   border-radius: 10px;
 }
 
-/* line 161, ../sass/_components/_jazz_image.scss */
+/* line 162, ../sass/_components/_jazz_image.scss */
 figure.effect-jazz p {
   padding: 0.5em 1em;
   text-transform: none;
@@ -2494,7 +2495,7 @@ figure.effect-jazz p {
   opacity: 0;
 }
 
-/* line 170, ../sass/_components/_jazz_image.scss */
+/* line 171, ../sass/_components/_jazz_image.scss */
 figure.effect-jazz:hover img {
   opacity: 0.3;
   -webkit-transform: scale3d(1.05, 1.05, 1);
@@ -2502,7 +2503,7 @@ figure.effect-jazz:hover img {
   border-radius: 10px;
 }
 
-/* line 177, ../sass/_components/_jazz_image.scss */
+/* line 178, ../sass/_components/_jazz_image.scss */
 figure.effect-jazz:hover figcaption::after {
   opacity: 1;
   -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
@@ -2510,7 +2511,7 @@ figure.effect-jazz:hover figcaption::after {
   border-radius: 10px;
 }
 
-/* line 184, ../sass/_components/_jazz_image.scss */
+/* line 185, ../sass/_components/_jazz_image.scss */
 figure.effect-jazz:hover h2,
 figure.effect-jazz:hover p {
   opacity: 1;
@@ -2518,7 +2519,7 @@ figure.effect-jazz:hover p {
   transform: scale3d(1, 1, 1);
 }
 
-/* line 192, ../sass/_components/_jazz_image.scss */
+/* line 193, ../sass/_components/_jazz_image.scss */
 .jazz-img__caption {
   text-align: left;
 }

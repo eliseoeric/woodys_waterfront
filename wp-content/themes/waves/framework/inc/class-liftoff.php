@@ -100,6 +100,7 @@ class Liftoff {
 		 */
 		add_theme_support( 'post-thumbnails' );
 		add_image_size( 'recent-post', 300, 213, true );
+		add_image_size( 'jazz-figure', 445, 250, true );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
