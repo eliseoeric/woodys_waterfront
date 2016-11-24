@@ -103,8 +103,7 @@ class Weather_Widget extends WP_Widget {
 	public function return_default() {
 		$html = "<div class='hero-weather'>
 					<div class='hero-weather__current'>
-						<span class='currently'>Currently</span>
-						<span class='degrees'>88<span class='symbol'>°</span></span>
+						<span class='currently '>Currently</span>
 						<div class='icon_weather sun-shower'>
 							<div class='cloud'></div>
 							<div class='sun'>
@@ -112,6 +111,7 @@ class Weather_Widget extends WP_Widget {
 							</div>
 							<div class='rain'></div>
 						</div>
+						<span class='degrees heading-black'>88<span class='symbol'>°</span></span>
 					</div>
 					<div id='marineforecast' class='marineforecast row'>
 						<div class='weather-stat' id='sunset'>
@@ -145,8 +145,9 @@ class Weather_Widget extends WP_Widget {
 		$html = "<div class='hero-weather'>
 					<div class='hero-weather__current'>
 						<span class='currently'>Currently</span>
-						<span class='degrees'>{$temp}<span class='symbol'>°</span></span>
-						<div class='icon_weather {$condition['condition']}'>" . $condition['snippet'] . "</div></div>";
+						<div class='icon_weather {$condition['condition']}'>" . $condition['snippet'] . "</div>
+					<span class='degrees heading-black'>{$temp}<span class='symbol'>°</span></span>
+					</div>";
 
 		$html .= "<div id='marineforecast' class='marineforecast row'>
 						<div class='weather-stat' id='sunset'>

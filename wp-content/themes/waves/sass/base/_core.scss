@@ -36,6 +36,9 @@ span.block {
 .bg-dark-blue{
 	background-color: $brand-dark-blue;
 }
+.bg-dark-blue-transparent{
+	background-color: rgba( $brand-dark-blue, 0.9 );
+}
 
 .bg-blue{
 	background-color:$brand-blue;

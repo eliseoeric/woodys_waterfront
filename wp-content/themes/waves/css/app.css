@@ -1196,57 +1196,62 @@ span.block {
   background-color: #0F385D;
 }
 
-/* line 40, ../sass/base/_core.scss */
+/* line 39, ../sass/base/_core.scss */
+.bg-dark-blue-transparent {
+  background-color: rgba(15, 56, 93, 0.9);
+}
+
+/* line 43, ../sass/base/_core.scss */
 .bg-blue {
   background-color: #00A1FB;
 }
 
-/* line 44, ../sass/base/_core.scss */
+/* line 47, ../sass/base/_core.scss */
 .bg-green {
   background-color: #4AFD5C;
 }
 
-/* line 48, ../sass/base/_core.scss */
+/* line 51, ../sass/base/_core.scss */
 .bg-teal {
   background-color: #1BBC9B;
 }
 
-/* line 52, ../sass/base/_core.scss */
+/* line 55, ../sass/base/_core.scss */
 .bg-orange {
   background-color: #FA5333;
 }
 
-/* line 56, ../sass/base/_core.scss */
+/* line 59, ../sass/base/_core.scss */
 .bg-neutral {
   background-color: #fbf7ec;
 }
 
-/* line 60, ../sass/base/_core.scss */
+/* line 63, ../sass/base/_core.scss */
 .bg-grey {
   background-color: #dce3e7;
 }
 
-/* line 64, ../sass/base/_core.scss */
+/* line 67, ../sass/base/_core.scss */
 .bg-light-blue {
   background-color: #f1faff;
 }
 
-/* line 68, ../sass/base/_core.scss */
+/* line 71, ../sass/base/_core.scss */
 .cl-white {
   color: #fff;
 }
 
-/* line 72, ../sass/base/_core.scss */
+/* line 75, ../sass/base/_core.scss */
 .cl-blue {
   color: #00A1FB;
 }
 
-/* line 76, ../sass/base/_core.scss */
+/* line 79, ../sass/base/_core.scss */
 .cl-dark-blue {
   color: #0078bc;
 }
 
-/* line 80, ../sass/base/_core.scss */
+/* line 83, ../sass/base/_core.scss */
 .cl-orange {
   color: #FA5333;
 }
@@ -3001,6 +3006,412 @@ ul.social_icons li {
   width: 100%;
 }
 
+/* line 1, ../sass/_modules/_weather-widget.scss */
+.weather-widget {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  z-index: 65;
+  height: 280px;
+  padding: 35px;
+}
+/* line 11, ../sass/_modules/_weather-widget.scss */
+.weather-widget--nav .hero-weather__current {
+  margin: 1em 0;
+  display: block;
+  width: 100%;
+}
+/* line 20, ../sass/_vendor/bourbon/addons/_clearfix.scss */
+.weather-widget--nav .hero-weather__current::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 16, ../sass/_modules/_weather-widget.scss */
+.weather-widget--nav .hero-weather__current .currently {
+  display: none;
+}
+/* line 20, ../sass/_modules/_weather-widget.scss */
+.weather-widget--nav .hero-weather__current .degrees {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* line 89, ../sass/_vendor/neat/grid/_span-columns.scss */
+.weather-widget--nav .hero-weather__current .degrees:last-child {
+  margin-right: 0;
+}
+/* line 27, ../sass/_modules/_weather-widget.scss */
+.weather-widget--nav .hero-weather__current .icon_weather {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  position: relative;
+  margin: 2em 0;
+}
+/* line 89, ../sass/_vendor/neat/grid/_span-columns.scss */
+.weather-widget--nav .hero-weather__current .icon_weather:last-child {
+  margin-right: 0;
+}
+/* line 35, ../sass/_modules/_weather-widget.scss */
+.weather-widget--nav #marineforecast {
+  top: 0;
+}
+
+/* line 47, ../sass/_modules/_weather-widget.scss */
+.hero-weather__current .currently {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+/* line 54, ../sass/_modules/_weather-widget.scss */
+.hero-weather__current .degrees {
+  display: block;
+  position: absolute;
+  left: 150px;
+  line-height: 1;
+  top: 50px;
+  text-transform: uppercase;
+  font-size: 80px;
+}
+/* line 62, ../sass/_modules/_weather-widget.scss */
+.hero-weather__current .degrees .symbol {
+  vertical-align: super;
+  font-size: 60px;
+}
+
+/* line 69, ../sass/_modules/_weather-widget.scss */
+.marineforecast {
+  top: 100px;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #fff;
+  font-size: 0.85em;
+}
+/* line 82, ../sass/_modules/_weather-widget.scss */
+.marineforecast .weather-stat {
+  top: 15px;
+}
+/* line 86, ../sass/_modules/_weather-widget.scss */
+.marineforecast .stat-label {
+  text-transform: uppercase;
+  color: #989898;
+}
+/* line 91, ../sass/_modules/_weather-widget.scss */
+.marineforecast .stat-value {
+  font-weight: bold;
+}
+
+/* line 110, ../sass/_modules/_weather-widget.scss */
+.weather-stat {
+  width: 33%;
+  padding: 0px 5px;
+  display: inline-block;
+  float: left;
+}
+
+/* line 117, ../sass/_modules/_weather-widget.scss */
+.icon_weather {
+  position: absolute;
+  display: block;
+  width: 5.5em;
+  height: 5.5em;
+  font-size: .65em;
+  /* control icon size here */
+  margin: 1rem;
+}
+
+/* line 126, ../sass/_modules/_weather-widget.scss */
+.cloud {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 3.6875em;
+  height: 3.6875em;
+  margin: -1.84375em;
+  background: #0D3B66;
+  color: #0D3B66;
+  border-radius: 50%;
+  box-shadow: -2.1875em 0.6875em 0 -0.6875em, 2.0625em 0.9375em 0 -0.9375em, 0 0 0 0.375em #fff, -2.1875em 0.6875em 0 -0.3125em #fff, 2.0625em 0.9375em 0 -0.5625em #fff;
+}
+
+/* line 144, ../sass/_modules/_weather-widget.scss */
+.cloud:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -0.5em;
+  display: block;
+  width: 4.5625em;
+  height: 1em;
+  background: #0D3B66;
+  box-shadow: 0 0.4375em 0 -0.0625em #fff;
+}
+
+/* line 155, ../sass/_modules/_weather-widget.scss */
+.cloud:nth-child(2) {
+  z-index: 0;
+  background: #fff;
+  box-shadow: -2.1875em 0.6875em 0 -0.6875em #fff, 2.0625em 0.9375em 0 -0.9375em #fff, 0 0 0 0.375em #fff, -2.1875em 0.6875em 0 -0.3125em #fff, 2.0625em 0.9375em 0 -0.5625em #fff;
+  opacity: 0.3;
+  transform: scale(0.5) translate(6em, -3em);
+  animation: cloud 4s linear infinite;
+}
+
+/* line 168, ../sass/_modules/_weather-widget.scss */
+.cloud:nth-child(2):after {
+  background: #fff;
+}
+
+/* line 170, ../sass/_modules/_weather-widget.scss */
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  margin: -1.25em;
+  background: #0D3B66;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.375em #fff;
+  animation: spin 12s infinite linear;
+}
+
+/* line 182, ../sass/_modules/_weather-widget.scss */
+.rays {
+  position: absolute;
+  top: -2em;
+  left: 50%;
+  display: block;
+  width: 0.375em;
+  height: 1.125em;
+  margin-left: -0.1875em;
+  background: #fff;
+  border-radius: 0.25em;
+  box-shadow: 0 5.375em #fff;
+}
+
+/* line 194, ../sass/_modules/_weather-widget.scss */
+.rays:before,
+.rays:after {
+  content: '';
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  display: block;
+  width: 0.375em;
+  height: 1.125em;
+  transform: rotate(60deg);
+  transform-origin: 50% 3.25em;
+  background: #fff;
+  border-radius: 0.25em;
+  box-shadow: 0 5.375em #fff;
+}
+
+/* line 209, ../sass/_modules/_weather-widget.scss */
+.rays:before {
+  transform: rotate(120deg);
+}
+
+/* line 212, ../sass/_modules/_weather-widget.scss */
+.cloud + .sun {
+  margin: -2em 1em;
+}
+
+/* line 216, ../sass/_modules/_weather-widget.scss */
+.rain,
+.lightning,
+.snow {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 3.75em;
+  height: 3.75em;
+  margin: 0.375em 0 0 -2em;
+  background: #0D3B66;
+}
+
+/* line 229, ../sass/_modules/_weather-widget.scss */
+.rain:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 1.125em;
+  height: 1.125em;
+  margin: -1em 0 0 -0.25em;
+  background: #0cf;
+  border-radius: 100% 0 60% 50% / 60% 0 100% 50%;
+  box-shadow: 0.625em 0.875em 0 -0.125em rgba(255, 255, 255, 0.2), -0.875em 1.125em 0 -0.125em rgba(255, 255, 255, 0.2), -1.375em -0.125em 0 rgba(255, 255, 255, 0.2);
+  transform: rotate(-28deg);
+  animation: rain 3s linear infinite;
+}
+
+/* line 248, ../sass/_modules/_weather-widget.scss */
+.bolt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.25em 0 0 -0.125em;
+  color: #fff;
+  opacity: 0.3;
+  animation: lightning 2s linear infinite;
+}
+
+/* line 257, ../sass/_modules/_weather-widget.scss */
+.bolt:nth-child(2) {
+  width: 0.5em;
+  height: 0.25em;
+  margin: -1.75em 0 0 -1.875em;
+  transform: translate(2.5em, 2.25em);
+  opacity: 0.2;
+  animation: lightning 1.5s linear infinite;
+}
+
+/* line 265, ../sass/_modules/_weather-widget.scss */
+.bolt:before,
+.bolt:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin: -1.625em 0 0 -1.0125em;
+  border-top: 1.25em solid transparent;
+  border-right: 0.75em solid;
+  border-bottom: 0.75em solid;
+  border-left: 0.5em solid transparent;
+  transform: skewX(-10deg);
+}
+
+/* line 279, ../sass/_modules/_weather-widget.scss */
+.bolt:after {
+  margin: -0.25em 0 0 -0.25em;
+  border-top: 0.75em solid;
+  border-right: 0.5em solid transparent;
+  border-bottom: 1.25em solid transparent;
+  border-left: 0.75em solid;
+  transform: skewX(-10deg);
+}
+
+/* line 287, ../sass/_modules/_weather-widget.scss */
+.bolt:nth-child(2):before {
+  margin: -0.75em 0 0 -0.5em;
+  border-top: 0.625em solid transparent;
+  border-right: 0.375em solid;
+  border-bottom: 0.375em solid;
+  border-left: 0.25em solid transparent;
+}
+
+/* line 294, ../sass/_modules/_weather-widget.scss */
+.bolt:nth-child(2):after {
+  margin: -0.125em 0 0 -0.125em;
+  border-top: 0.375em solid;
+  border-right: 0.25em solid transparent;
+  border-bottom: 0.625em solid transparent;
+  border-left: 0.375em solid;
+}
+
+/* line 302, ../sass/_modules/_weather-widget.scss */
+.flake:before,
+.flake:after {
+  content: '\2744';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1.025em 0 0 -1.0125em;
+  color: #fff;
+  list-height: 1em;
+  opacity: 0.2;
+  animation: spin 8s linear infinite reverse;
+}
+
+/* line 314, ../sass/_modules/_weather-widget.scss */
+.flake:after {
+  margin: 0.125em 0 0 -1em;
+  font-size: 1.5em;
+  opacity: 0.4;
+  animation: spin 14s linear infinite;
+}
+
+/* line 320, ../sass/_modules/_weather-widget.scss */
+.flake:nth-child(2):before {
+  margin: -0.5em 0 0 0.25em;
+  font-size: 1.25em;
+  opacity: 0.2;
+  animation: spin 10s linear infinite;
+}
+
+/* line 326, ../sass/_modules/_weather-widget.scss */
+.flake:nth-child(2):after {
+  margin: 0.375em 0 0 0.125em;
+  font-size: 2em;
+  opacity: 0.4;
+  animation: spin 16s linear infinite reverse;
+}
+
+/* Animations */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes cloud {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) translate(-200%, -3em);
+  }
+}
+@keyframes rain {
+  0% {
+    background: #0cf;
+    box-shadow: 0.625em 0.875em 0 -0.125em rgba(255, 255, 255, 0.2), -0.875em 1.125em 0 -0.125em rgba(255, 255, 255, 0.2), -1.375em -0.125em 0 #0cf;
+  }
+  25% {
+    box-shadow: 0.625em 0.875em 0 -0.125em rgba(255, 255, 255, 0.2), -0.875em 1.125em 0 -0.125em #0cf, -1.375em -0.125em 0 rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0.625em 0.875em 0 -0.125em #0cf, -0.875em 1.125em 0 -0.125em rgba(255, 255, 255, 0.2), -1.375em -0.125em 0 rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0.625em 0.875em 0 -0.125em rgba(255, 255, 255, 0.2), -0.875em 1.125em 0 -0.125em rgba(255, 255, 255, 0.2), -1.375em -0.125em 0 #0cf;
+  }
+}
+@keyframes lightning {
+  45% {
+    color: #fff;
+    background: #fff;
+    opacity: 0.2;
+  }
+  50% {
+    color: #0cf;
+    background: #0cf;
+    opacity: 1;
+  }
+  55% {
+    color: #fff;
+    background: #fff;
+    opacity: 0.2;
+  }
+}
 /* line 1, ../sass/_modules/_social-media.scss */
 .social-list {
   margin: 2em 0;

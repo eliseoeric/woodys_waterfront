@@ -58,8 +58,17 @@
 						<li class="site-navigation__cta">
 							<a href="tel:727-360-9165" class="button">Call Now</a>
 						</li>
-					</ul>	
+					</ul>
+					<div class="nav__weather weather-widget--nav cl-white mobile-only fluid-container">
+						<?php 
+							if( is_active_sidebar( 'frontpage-1' ) )
+							{
+								dynamic_sidebar( 'frontpage-1' );
+							}
+						?>
+					</div>	
 				</div>
+
 			</nav>
 
 			<div id="quick-contact" class="quick-contact">
